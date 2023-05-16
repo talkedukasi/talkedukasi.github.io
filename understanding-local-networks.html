@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Understanding Local Networks - QnA</title>
+    <meta name="description" content="Understanding Local Networks, , , , , , , 0, Understanding local networks, www.slideshare.net, 1024 x 576, jpeg, , 20, understanding-local-networks, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Understanding Local Networks - QnA" />
+    <meta property="og:description" content="Understanding Local Networks, , , , , , , 0, Understanding local networks, www.slideshare.net, 1024 x 576, jpeg, , 20, understanding-local-networks, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Understanding Local Networks - QnA" />
+    <meta name="twitter:description" content="Understanding Local Networks, , , , , , , 0, Understanding local networks, www.slideshare.net, 1024 x 576, jpeg, , 20, understanding-local-networks, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://talkedukasi.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://talkedukasi.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://talkedukasi.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://talkedukasi.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://talkedukasi.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://talkedukasi.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://talkedukasi.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://talkedukasi.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Understanding Local Networks</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">vincentabuso9</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Understanding+Local+Networks" alt="Understanding Local Networks">
+                    </div>
+                    <p></p>
+                    <p>understanding local networks (strategic analysis and inuitive thinking)​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#understanding-local-networks-strategic-analysis-and-inuitive-thinking%e2%80%8b">1.
+                                            understanding local networks (strategic analysis and inuitive thinking)​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#why-do-we-need-to-understand-the-local-networks%e2%80%8b">2.
+                                            Why do we need to understand the local networks?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#network-protocolarchitecturein-your-opinion-and-understanding-which-of-the-different-network-protocol-or-network-architecture-is-best-and-most-practical-to-use-in-a-local-area-network-setup-why">3.
+                                            Network Protocol/Architecture
+In your opinion and understanding, which of the different network protocol or network architecture is best and most practical to use in a local area network setup, why? </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#now-that-we-have-the-essential-understanding-of-howto-other-information-from-different-sources-let-us-ryhow-well-we-can-do-on-our-own-try-watching-a-localnews-from-any-tv-networks-or-try-listening-f">4.
+                                            Now that we have the essential understanding of howto other information from different sources, let us ryhow well we can do on our own. Try watching a localnews from any TV networks or try listening from aradio programthe update about COVID 19 MassTesting in your locality. The record all relevantinformation you heard from the news and write itdown in your activity notebook. We will do the sameon our part so do your best buddy!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#answer-whether-the-following-statement-belongs-to-school-community-and-society-1-it-is-a-place-where-children-go-to-be-educated-2-it-may-refer-to-a-system-or-network-of-relationships-3-this-may">5.
+                                            Answer whether the following statement belongs to SCHOOL, COMMUNITY and SOCIETY ? 1. It is a place where children go to be educated. 2. It may refer to a system or network of relationships 3. This may refer to a group of individuals with a certain sense of belongingness4. It is no definite boundary. 5. It is a group of people who share something in common, 6. It is a social system of long-established relationships and a certain way of life. 7. An organization that provides instruction such as institutions for the teaching of children. 8. A group of people with common characteristics or interests together within a larger society.9. It is a web of social relationships which is the key of understanding human behavior and the various institution.10. An educational institution or building where young people receive education.11. It is a group of people with common purpose, shared values, and agreement on goals. 12. a society embedded institution that is crucially shaped by the social environment. 13. It always possesses its own culture that is unique. 14. It is a social group of any size whose members reside in a specific locality, share government and have common cultural and historical heritage.15. It is a large group of people who live together in an organized way, making decisions about how to do things and sharing the work that needs to be done. 16. It is a place for learning and a community of people committed to developing human potential with a goal of attaining positive social transformation.17. This is an educational institution designed to provide learning spaces and learning environment for the teaching of students under the supervision of teachers.18. It is a community of people living and having shared customs, laws, and organization.19. It has a power qualities that shaped learning and has a power to motivate its members. 20. it has a sense of belongingness is a central to the community. ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#post-testdirection-complete-the-crossword-by-filling-in-a-word-that-fits-each-clueacross2-this-field-is-focused-in-the-study-of-society-social-orders-socialization-and-culture3-one-of-the-perspe">6.
+                                            POST TESTDirection: Complete the crossword by filling in a word that fits each clueAcross:2. This field is focused in the study of society, social orders, socialization and culture3. One of the perspectives in community wherein it understands that community is composedof the ways people interact with each other, react, and expect each other to act and interact4. Institutional community is amodel as it is defined by its networks and institutions8The ultimate of this discipline is to improve the lives of others such that their needs aresatisfied10. Civil society perspective is considered asmodel since because of collaborationa sense of belonging is achieved.Down:1. One highlight of civil society perspective wherein the members of the community may involvethemselves in various community activities.5. It is most often associated with the study, diagnosis of mental illnesses.5. It is described from social science perspective as a group of people interacting together7. This community perspective uses self-organization and encourages the local citizens tocontribute to the community by taking responsibilities and actions.9. It explains the connection between the individual and the community.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#direction-write-true-if-the-statement-if-correct-and-false-if-the-statement-is-wrong-__________1-empowerment-of-the-group-can-be-taken-to-involve-building-trust-cooperation-and-communication-____">7.
+                                            Direction: Write TRUE if the statement if correct and FALSE if the statement is wrong. __________1. Empowerment of the group can be taken to involve building trust, cooperation and communication. __________2. Meetings alert members to important events. __________3. Empowerment does not help the people to resolve their own critical challenges. __________4. Local citizens are aoountable to the communities they live in for the long term. __________5. The management system is dertermined by the people who comprise the organization. __________6. Empowered teams have the full expression of individual excellence. __________7. When teamwork is applied to an organization, the organization is value as a network of enterdependent centers of excellence. __________8. Guide with positive and negative feedback. __________9. Managing a large workforce is an easy task. __________10. Provide growth opportunities to the people by giving them more challenging tasks. __________11. Teamwork is essential for the success of empowerment. __________12. Advocacy is the act or process of supporting a cause or proposal for enhancing effective practices to improve behavior. __________13. Integrity refers to understand and honor individual, culture and other contextual differences as they shape student’s development. __________14. Empowerment cannot exist without a clear commitment from organizational leadership. __________15. Promote culturally competent practice is one of the strategies in advocacy.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#iu-true-or-falsedirections-read-and-understand-the-following-statements-write-tif-the-statement-is-true-and-f-if-its-false-welte-your-answer-on-tospace-provided26-fiber-optic-cabling-uses-electri">8.
+                                            IU. TRUE or FALSEDirections: Read and understand the following statements. Write Tif the statement is TRUE and F if Its FALSE. Welte your answer on tospace provided26. Fiber-Optic Cabling uses electrical signals for data transmission.27. Wireless connection uses radio signals, satellite transmissions, or infrared technology for data transmission28. A local area network is a group of interconnected devices that is under a single administrative control group.29. A wide area network is a network that connects two or more local-aroa networks that are in geographically separated location.30. Wireless area network is a local area network that uses wireless devices to send and recelve data through radio waves.31. Copper Cabling uses fiber to transmit data as light pulses,32. 8 bits is equivalent to 4 bits.33. Bandwidth is the amount of data which could be transmitted within a fixed period,34. TCP is the dominant standard for internet-working and represents a set of public standards.35. A peer-to-peer Network is the network, where the hosts are directly connected to one another without any networking device betw27348475​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-i-can-do-jo-picture-analysis-instructions-look-at-the-picture-shown-below-explain-the-significance-of-this-picture-to-the-concepts-of-trends-and-networks-using-a-50-word-essay-vrite-this-in-yo">9.
+                                            What I Can Do JO PICTURE ANALYSIS Instructions: Look at the picture shown below. Explain the significance of this picture to the concepts of trends and networks using a 50-word essay. Vrite this in your activity notebook. http://darrentnet blogspot.com/2017/02/understanding-local-networks.html​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-community-situations-vary-and-each-community-has-its-own-context-and-realities-in-order-to-understand-these-context-and-realities-one-should-a-propose-plan-and-programs-for-the-benefit-of-the-c">10.
+                                            1. Community situations vary and each community has its own context and realities. In order to understand these context and realities, one should: a. propose plan and programs for the benefit of the community, b. provide strategies meant to enhance the quality of life in a community. c. conduct benchmarking to have a clear picture of the community. d. implement plan of actions to address the needs of the community. 2. Understanding Community Dynamics makes networking favorable. This can be done through: a. understanding the attitude of the people living in the community.b. strong partnership with schools, institutions, groups or other local organizations. c. strict implementation of the community's rules and norms. d. in-depth analysis of the community's strengths and challenges. 3. Which of the following should an outsider do in order to fully. understand the context of a community and to provide necessary help? a. Undertake a dialogue with the community. b. Implement actions to address the problems. c. Provide preliminary project planning. d. Establish networking and partnership.  4. It is referred to as the process of understanding the communities" problems and struggles in order to provide solutions to these through community action and project implementation. a. community Action b. Socialization c. Community Engagement d. Community Dynamism 5. Which among the following is NOT an importance of understanding a community? a. Provides an opportunity to understand the community's dominant rules and norms b. Provides an occasion to gauge the attitude and behavior of the community c. Provides an avenue to understand the community context even if it does not provide any solutions to the problems. d. Provides a way for a more directed and well-informed dialogue with the community​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#d-suggested-enrichmentreinforcement-activ-directions-please-answer-these-four-4-questions-write-your-answers-on-the-separate-sheet-of-paper-each-question-is-worth-5-points-total-20-points-5">11.
+                                            D. Suggested Enrichment/Reinforcement Activ Directions: Please answer these four (4) questions. Write your answers on the separate sheet of paper. Each question is worth 5 points. Total - 20 points. 5 - Excellent 4 - Good 3 - Average 2 - Fair 1 - Poor 1. What are the key advantages when you get relevant information from Tour Operators and Travel Agents compared to other sources? Explain. 2. What is your understanding on this phrase: “Never use the internet only for references/information, it is important to make direct contact with real people"? 3. As a tour guide, why is it important and vital to develop an extensive network of personal contacts? 4. What do you think are the information that you could acquire from local identities and personalities that you could not probably get from other sources? Explain.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#this-activity-will-enrich-your-understanding-of-mobile-devices-true-or-false-read-each-statement-below-carefully-write-t-if-you-think-thestatement-is-true-write-f-if-you-think-the-statement-is-f">12.
+                                            
+This activity will enrich your understanding of mobile devices.
+True or False: Read each statement below carefully. Write T if you think the
+statement is TRUE. Write F if you think the statement is FALSE.
+1. Mobile devices are designed to be extremely portable, and they can often fit
+in your hand.
+2. Mobile devices have wireless data network interface for accessing internet
+(Wi-Fi or cellular data connection)
+111
+3. Mobile devices do not have mobile operating system.
+4. Applications (apps) of mobile devices can be acquired through different
+means (web, included with the operating system, or provided by wireless data
+carrier).
+5. Mobile devices do not have size and weight that allows them to be carried in
+one hand and manipulated with the other hand
+6. Mobile devices have data synchronization capabilities with separate
+computer or remote servers.
+7. Mobile devices do not have local non removable data storage.
+8. The most common size of mobile device is pocket-sized that can be
+handheld.
+9. What makes the mobile device unique compared to other technologies is
+inherent flexibility in the hardware and also the software.
+10. Mobile devices have long lasting battery.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#test-11-direction-choose-the-words-in-the-box-that-best-designate-a-sample-of-8-jobs-you-can-get-with-an-entrepreneur-degree-write-the-words-on-the-space-provided-teacher-recruiter-sales-busines">13.
+                                            TEST 11: Direction: Choose the word/s in the box that best designate a sample of 8 jobs you can get with an entrepreneur degree. Write the word/s on the space provided. Teacher Recruiter Sales Business Reporter Business Consultant Mid-Level Management Not for Profit Fundraiser Research &amp; Development 1.8 best job you can get when you get Entrepreneurship Degree. 8 POINTS 1. Well suited for this opportunity - 2. Training to help identify things that others may not pick up on and the training to know how to fix them 3. Know how to represent a company, manage accounts, and follow up on leads, 4. Requires understanding the importance of business and networking relationships 5. Teach them the benefits of math to business, history to innovation, and literature to persuasive advertising. 6. You most likely have a keen sense of what type of person is needed to fill us a position, 7. You are in a prime position to take the lead on covering a local business beat. 8.A good qualification to work in R&amp;D is a training and education understanding of business procedures, and practices and entrepreneurship​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#activity-2-across-the-community-now-that-we-have-the-essential-understanding-of-how-to-gather-information-from-different-sources-let-us-try-how-well-we-can-do-on-our-own-try-watching-a-local-news-f">14.
+                                            Activity 2: Across the Community Now that we have the essential understanding of how to gather information from different sources, let us try how well we can do on our own. Try watching a local news from any TV networks or try listening from a radio program on the update about COVID -19 Mass Testing in your locality. Then record all relevant information you heard from the news and write it down in your activity notebook. We will do the same on our part so do your best buddy! PERFORMANCE po namin to Sana may mag sagot ng tama​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#activity-vi-try-it-synthesize-the-given-selection-using-summarizing-and-paraphrasing-20-points-1-%e2%80%9cwomen-entrepreneurs-in-the-developing-world-often-face-challenges-that-limit-their-chance">15.
+                                            Activity VI TRY IT. Synthesize the given selection using summarizing and paraphrasing. (20 points) 1. “Women entrepreneurs in the developing world often face challenges that limit their chances for success and growth. They often have less access to education than men and have difficulty getting financing on their own. But with an understanding of the essential aspects of doing business – such as planning, financing, networking and marketing – they can overcome those obstacles. That's where the 10,000 Women Initiative comes in. As Faiza Elmasry tells us, it's an investment in education with dividends that benefit the businesswomen, their local communities and their national economies.” Paraphrasing the text:​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#now-that-we-have-the-essential-understanding-of-howto-other-information-from-different-sources-let-us-ryhow-well-we-can-do-on-our-own-try-watching-a-localnews-from-any-tv-networks-or-try-listening-f">16.
+                                            Now that we have the essential understanding of howto other information from different sources, let us ryhow well we can do on our own. Try watching a localnews from any TV networks or try listening from aradio programthe update about COVID 19 MassTesting in your locality. The record all relevantinformation you heard from the news and write itdown in your activity notebook. We will do the sameon our part so do your best buddy! p​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#women-entrepreneurs-in-the-developing-world-often-face-challenges-thatlimit-their-chance-for-success-and-growth-they-often-have-less-access-toeducation-than-men-and-have-difficulty-getting-financing">17.
+                                            Women entrepreneurs in the developing world often face challenges thatlimit their chance for success and growth. They often have less access toeducation than men and have difficulty getting financing on their own. But withan understanding of the essential aspects of doing business such as planningfinancing, networking and marketing - they can overcome those obstacles. Thatwhere the 10,000 Women Initiative comes in. As Paiza Elmasry tells us, it's aninvestment in education with dividends that benefit the businesswomen, theirlocal communities and their national economies.Summarize the text​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#directions-answer-the-following-questions-and-encircle-only-the-letter-of-your-choice-1-what-is-a-sequential-pattern-of-change-in-recorded-dataa-macrotrend-b-megatrendc-trends2-who-coined-the-t">18.
+                                            DIRECTIONS: Answer the following questions and encircle only the letter of your choice.1. What is a sequential pattern of change in recorded data?a. Macrotrend b. Megatrendc. Trends2. Who coined the term megatrend in 1982?Trenda. James Naisbit b. James Naisbitte© John Naisbitt d. John Naisbitte3. What basic test do trends must pass to see if it affects a wide range of people and has a wide range of implications?a. Test of Significance b. Test of Clarificationc. Test of Relevanced. Test of Completion4. What are the larger patterns of broad trends that reshape and transform our lives?a. Macrotrends b. Megatrendd. Megatrends5. What do you call a trend in a global scale?a. Global networkb. Megatrendc. Macrotrendd. Planetary Network6. These are small forces that can stir big changes in communities and institutions around the world.a. Microtrendb. Megatrendc. Fadd. Macrotrends7. This is a temporary or short-lived pattern of group behavior?a. Fadsb. Megatrendc. Microtrendsd. Fad8. The Harlem Shake Dance Craze is an example of?a. Microtrendb. Megatrendc. Fadd. Macrotrends9. Who proposed the 4S Trendspotting model?a. Renh and Lindkvistb. Rhen and Lindkvistt c. Ren and Lindkvistd. Rehn Lindkvist10. What is the sequence of the 4S Trendspotting model?a. Scrutiny, Setup, Surveying, Scenariob. Scenario, Setup, Surveying, Scrutinyc. Setup, Surveying, Scenario, Scrutinyd. Setup, Scrutiny, Surveying, Scenario11. What process under 4S is when you analyze your work to be able to identify a trend or shift?a. Setupb. ScenarioC. Summaryd. Scrutiny12. What process under 4S is when you observe different cultures to grasps what is happening?a. Scenariob. SurveyingC. Scrutinyd. Summary13. This section in the model contains the class' trend analysis.a. Scenariob. SurveyingC. Scrutinyd. Summary14. What is called to someone who starts a trend?a. Trendstarter Trendsetter c. Trendmaker d. Trend Enthusiast15. What refers to the study of trends and how it affects the society?a. Trendology b. Trend Identification Trend-Spotting d. Trend Analysis16. What follows after spotting a trend?a. Trend Clarification b. Trend Specification c. Trend Analysis d. Trend Identification17. These are called as forces of change and that they make trends as they are.a. Trendsetter b. Enablersd. Change drivers18. These may take form as laws, protests or any form as long as it stops a change or delay it?a. Stoppersb. Frictiond. Government19. What is considered to be the most powerful force for change the world today.a. Advocacyb. USA c. Pope d. Technology20. What is considered to be the last line of defense" against technological advancements and application?a. Ideas and Ideologiesd. Moraleb. Religionc. Social and Moral valuesII. UNDERSTANDING LOCAL NETWORKS21. Our relationships are networked. This means thata. We need to relate because we are connected.b. Other Filipinos in the Philippine Archipelago are also my neighbor.c. My human existence is basically social in nature.d. None of the above contradicts the given meaning.c. Driverc. Blockers​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-multiple-choicedirections-read-and-understand-carefully-the-following-questions-encircle-the-letter-of-the-correct-answer1-it-is-used-to-connect-storage-devices-to-a-motherboarda-ide-cablesc-fi">19.
+                                            A. MULTIPLE CHOICEDirections: Read and understand carefully the following questions. Encircle the letter of the correct answer1. It is used to connect storage devices to a motherboarda IDE cablesc. Firewireb. Satad. Ethernet2. Thecables are used to set up local area networks.a. Resistorc. Capacitorb. Ethernetd. Diode3. It is a semiconductor with a solid and non-moving part to pass a charge.aa. Transistorc. Integrated circuit (c)b. Resistord. Sata4. Its function is to store the electrical energy and give this energy again to the circuit when necessary.a. Integrated circuitc. Capacitorb. Dioded. Transistor5. What ESATA stands for?a. Extended serial advanced technology attachmentb. Exterior serial advanced technology attachmentc. Exemplify serial advanced technology attachmentd. External serial advanced technology attachmentpa sagot po plsss asap​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#you-can-do-thistmodified-true-or-false-write-the-word-fact-if-the-statement-is-correct-and-if-it-is-not-changethe-underlined-wordwords-to-make-the-statement-right-write-your-answer-on-the-spacepro">20.
+                                            YOU CAN DO THISTMODIFIED TRUE OR FALSE-Write the word FACT if the statement is correct, and if it is not, changethe underlined word/words to make the statement right. Write your answer on the spaceprovided. 1. We are all part of a 'family that would help us understand our own cultural2. and values orientation. It is where a person is Penculturated through immersinghimsell or herself in serving others with the help of other individuals.3. Socialization is a process that every individual undergoes which enables him/herto become part of one's culture throughout his/her life time.4. Singing of Lupang Hinirang is an example of enculturation in school.5. Social media is a new agent of socialization that has influenced people both youngand old.6. Aside from teaching morality and reverence to our Creator, the church also instillscultural appreciation and cultural values that would shape the personality of a child.-7. The true purpose of having a network is to identify cultural and behavioral norms,8. Clan of Juan Dela Cruz is an example of a primary group.9. Project group is an example of a secondary group.10. The true reason for forming networks is economical.11. Members of a dance troupe is an example of in-group.12. In your everyday life in school, your kabarkada is an example of primary group.13. Medicines are very expensive in your local drugstores: Development Agency.14. Bank: You want to buy a house but will never have enough money for it15. The sea is running out of fish because of dynamite fishing: Advocacy Group16. Fe, a domestic helper, is maltreated by her employer in Saudi Arabia. She mustseek help from a government agency known as Overseas Workers WelfareAdministration.17. Non-state institutions function just like the government. In relation to governmentfunctions, its function can be best described as gap-filling.18. Al Gore went to the country to speak about the impacts of climate change. Thiskind of advocacy is the duty provided by a non-state agency called civil organization19. "Education prepares us for the later station of our lives, and to buy the necessitieof life.” This statement implies social needs.20. Education is a social institution through which society's children are taught basacademic knowledge, learning skills, and cultural norms.21. Elementary education belongs to a compulsory formal education.22. 22Self-actualization and 23 productive citizenry are the two most important goa23. of education.24. Grace passing the National Certificate on driving shows scenario of a nonforteducation.25. Middle Class is not considered as a social class.26. As societies evolved and became more complex, it began to elevate some mem27. of the society through 26land acquisition and gaining social status. This is ho27social stratification started in the society.28. The 28upper class are those elite group of people while the 29lower class are t29. underprivileged who struggled to make ends meet on a daily basis.30. In Conflict Theory Karl Marx viewed social stratification as creation of inequbetween the rich and the poor, or the powerful versus the powerless.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-your-own-understanding-of-this-state-policy-which-states-to-strenthen-the-network-of-public-employment-offices-and-rationalize-the-participation-of-the-private-sector-in-the-recruitment-and-p">21.
+                                            What is your own understanding of this state policy which states: to strenthen the network of public employment offices and rationalize the participation of the private sector in the recruitment and placement of workers, locally and overseas to serve national development objectives?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#true-or-false-1-self-fulfilment-strengthens-the-volunteer%e2%80%99s-ability-to-fulfill-his-or-her-purpose-or-mission-as-a-citizen-through-active-contribution-of-time-expertise-and-talents-%c2%a0-t">22.
+                                             TRUE OR FALSE 1 .Self-fulfilment strengthens the volunteer’s ability to fulfill his or her purpose or mission as a citizen through active contribution of time expertise, and talents.   True or false 2.Community Organizing improves the living condition of assisted individuals, institution or community by providing access to basic services and building staff and organizational capacities. 3.The Philippine congress passed the Republic Act 9841 or the volunteer act of 2007 that aims to integrate the efforts of the various sectors engaged in volunteering to support national development and international understanding. 4.Volunteerism in academe is in the form of Networks and Self-fulfillment sharing in the community, as well as in enriching knowledge management through research and curriculum development. 5.International volunteer service organizations deploy Filipino Volunteers to provide technical assistance especially in areas where local expertise is not really available6. Volunteerism in the government is implemented by enjoining Non-Government Agencies to set up volunteer programs to provide opportunities for the public sector.KAILANGAN KO PO NGAYON ANG SAGOT NYO MARAMING SALAMAT PO ​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="understanding-local-networks-strategic-analysis-and-inuitive-thinking%e2%80%8b">
+                            1. understanding local networks (strategic analysis and inuitive thinking)​</h2><br />
+                        Its all about standing while filming the producers<br />
+                                            <h2 class="ez-toc-section" id="why-do-we-need-to-understand-the-local-networks%e2%80%8b">
+                            2. Why do we need to understand the local networks?​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>Why do we need to understand the local networks?</strong></p><p></p>Because local area networks, generally called LANs, are privately owned networks. They provide a useful way of sharing resources between end users. The resources such as printers, file servers, scanners, and internet are easily sharable among other connected computers in a network.<p></p>#CarryOnLearning<p><strong>Answer:</strong></p><p>This paper frames the role of community (wireless) networks, and other forms of grassroots DIY networking models, as complementary to the Internet communication infrastructures hosting local services for facilitating local interactions, as drivers for a more convivial and sustainable life in the city. Today, only a few Internet-based global corporations mediate our everyday online interactions, without respecting our rights to privacy, freedom of expression and self-determination; they depend for their own sustainability on the exploitation of the immense collected information and design power toward private, commercial and political objectives. But when communication is meant to take place between people in physical proximity, local community networks can provide an alternative infrastructure owned and designed by those concerned. The paper analyses four key reasons, practical, social, political, and scientific, why such DIY networks should be considered as a viable complementary infrastructure for local communications even when Internet access is available. Through analogies with other relevant domains of local action, namely complementary currencies and cooperative housing, I conclude by addressing the dichotomy between local action and global coordination. I advocate for the co-creation of convivial ICT tools for building local communities, or better hybrid spaces of local cooperation, which are larger in size than the small in “small is beautiful” and smaller, but in many cases more diverse, than recent imaginaries of the “multitude”.</p><p><strong>Explanation:</strong></p><p>hope it helps</p><br />
+                                            <h2 class="ez-toc-section" id="network-protocolarchitecturein-your-opinion-and-understanding-which-of-the-different-network-protocol-or-network-architecture-is-best-and-most-practical-to-use-in-a-local-area-network-setup-why">
+                            3. Network Protocol/Architecture
+In your opinion and understanding, which of the different network protocol or network architecture is best and most practical to use in a local area network setup, why? </h2><br />
+                        <p><strong>Answer:</strong></p><p>i don't know what you think of the other side of the other side of the other sides ‍♀️</p><br />
+                                            <h2 class="ez-toc-section" id="now-that-we-have-the-essential-understanding-of-howto-other-information-from-different-sources-let-us-ryhow-well-we-can-do-on-our-own-try-watching-a-localnews-from-any-tv-networks-or-try-listening-f">
+                            4. Now that we have the essential understanding of howto other information from different sources, let us ryhow well we can do on our own. Try watching a localnews from any TV networks or try listening from aradio programthe update about COVID 19 MassTesting in your locality. The record all relevantinformation you heard from the news and write itdown in your activity notebook. We will do the sameon our part so do your best buddy!​</h2><br />
+                        <p><strong>Answer:</strong></p><p>So Anong question?</p><p><strong>Explanation:</strong></p><p>sorry po bat Wala ka namang tanong eh.Pa Brainlist nalang po pls kung pwede at pa follow din po pls.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="answer-whether-the-following-statement-belongs-to-school-community-and-society-1-it-is-a-place-where-children-go-to-be-educated-2-it-may-refer-to-a-system-or-network-of-relationships-3-this-may">
+                            5. Answer whether the following statement belongs to SCHOOL, COMMUNITY and SOCIETY ? 1. It is a place where children go to be educated. 2. It may refer to a system or network of relationships 3. This may refer to a group of individuals with a certain sense of belongingness4. It is no definite boundary. 5. It is a group of people who share something in common, 6. It is a social system of long-established relationships and a certain way of life. 7. An organization that provides instruction such as institutions for the teaching of children. 8. A group of people with common characteristics or interests together within a larger society.9. It is a web of social relationships which is the key of understanding human behavior and the various institution.10. An educational institution or building where young people receive education.11. It is a group of people with common purpose, shared values, and agreement on goals. 12. a society embedded institution that is crucially shaped by the social environment. 13. It always possesses its own culture that is unique. 14. It is a social group of any size whose members reside in a specific locality, share government and have common cultural and historical heritage.15. It is a large group of people who live together in an organized way, making decisions about how to do things and sharing the work that needs to be done. 16. It is a place for learning and a community of people committed to developing human potential with a goal of attaining positive social transformation.17. This is an educational institution designed to provide learning spaces and learning environment for the teaching of students under the supervision of teachers.18. It is a community of people living and having shared customs, laws, and organization.19. It has a power qualities that shaped learning and has a power to motivate its members. 20. it has a sense of belongingness is a central to the community. ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. SCHOOL</p><p>2. SOCIETY</p><p>3. COMMUNITY</p><p>4. SOCIETY</p><p>5. COMMUNITY</p><p>6. SOCIETY</p><p>7. SCHOOL</p><p>8. COMMUNITY</p><p>9. SOCIETY</p><p>10. SCHOOL</p><p>11. COMMUNITY</p><p>12. SOCIETY</p><p>13. COMMUNITY</p><p>14. COMMUNITY</p><p>15. COMMUNITY</p><p>16. SCHOOL</p><p>17. SCHOOL</p><p>18. COMMUNITY</p><p>19. COMMUNITY</p><p>20. COMMUNITY</p><p><strong>Explanation:</strong></p><p>TAMANG ANSWER TO, PA BRAINLIEST. IF U HAVE ANY QUESTION JUST ASK ME TY</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="post-testdirection-complete-the-crossword-by-filling-in-a-word-that-fits-each-clueacross2-this-field-is-focused-in-the-study-of-society-social-orders-socialization-and-culture3-one-of-the-perspe">
+                            6. POST TESTDirection: Complete the crossword by filling in a word that fits each clueAcross:2. This field is focused in the study of society, social orders, socialization and culture3. One of the perspectives in community wherein it understands that community is composedof the ways people interact with each other, react, and expect each other to act and interact4. Institutional community is amodel as it is defined by its networks and institutions8The ultimate of this discipline is to improve the lives of others such that their needs aresatisfied10. Civil society perspective is considered asmodel since because of collaborationa sense of belonging is achieved.Down:1. One highlight of civil society perspective wherein the members of the community may involvethemselves in various community activities.5. It is most often associated with the study, diagnosis of mental illnesses.5. It is described from social science perspective as a group of people interacting together7. This community perspective uses self-organization and encourages the local citizens tocontribute to the community by taking responsibilities and actions.9. It explains the connection between the individual and the community.​</h2><br />
+                        Across:<p>2. This field is focused on the study of society, social orders, socialization, and culture.</p>→ Sociology<p></p><p>3. One of the perspectives in community wherein it understands that community is composed of the ways people interact with each other, react, and expect each other to act and interact.</p>→ Institutional<p></p><p>4. Institutional community is a _______ model as it is defined by its networks and institutions.</p>→ Social Model <p></p><p>8. The ultimate of this discipline is to improve the lives of others such that their needs are satisfied.</p>→ Economics<p></p><p>10. Civil society perspective is considered as __________ model since because of collaboration a sense of belonging is achieved.</p><p>Affective Model </p><p></p>Down:<p>1. One highlight of the civil society perspective wherein the members of the community may involve themselves in various community activities.</p>→ Volunteerism<p></p><p>5. It is most often associated with the study and diagnosis of mental illnesses.</p>→ Psychology<p></p><p>6. It is described from a social science perspective as a group of people interacting together.</p>→ Community<p></p><p>7. This community perspective uses self-organization and encourages the local citizens to contribute to the community by taking responsibility and actions.</p>→ Grassroots<p></p><p>9. It explains the connection between the individual and the community. </p>→ Communitarianism<p></p><p><strong>Learn more about Communitarianism here: https://brainly.ph/question/245265</strong></p><p></p><p>#SPJ6</p><br />
+                                            <h2 class="ez-toc-section" id="direction-write-true-if-the-statement-if-correct-and-false-if-the-statement-is-wrong-__________1-empowerment-of-the-group-can-be-taken-to-involve-building-trust-cooperation-and-communication-____">
+                            7. Direction: Write TRUE if the statement if correct and FALSE if the statement is wrong. __________1. Empowerment of the group can be taken to involve building trust, cooperation and communication. __________2. Meetings alert members to important events. __________3. Empowerment does not help the people to resolve their own critical challenges. __________4. Local citizens are aoountable to the communities they live in for the long term. __________5. The management system is dertermined by the people who comprise the organization. __________6. Empowered teams have the full expression of individual excellence. __________7. When teamwork is applied to an organization, the organization is value as a network of enterdependent centers of excellence. __________8. Guide with positive and negative feedback. __________9. Managing a large workforce is an easy task. __________10. Provide growth opportunities to the people by giving them more challenging tasks. __________11. Teamwork is essential for the success of empowerment. __________12. Advocacy is the act or process of supporting a cause or proposal for enhancing effective practices to improve behavior. __________13. Integrity refers to understand and honor individual, culture and other contextual differences as they shape student’s development. __________14. Empowerment cannot exist without a clear commitment from organizational leadership. __________15. Promote culturally competent practice is one of the strategies in advocacy.​</h2><br />
+                        <p><strong>Answer:</strong></p>truefalsetruetruefalsetruefalsetruetruefale<p><strong>Explanation:</strong></p><p>please like </p><br />
+                                            <h2 class="ez-toc-section" id="iu-true-or-falsedirections-read-and-understand-the-following-statements-write-tif-the-statement-is-true-and-f-if-its-false-welte-your-answer-on-tospace-provided26-fiber-optic-cabling-uses-electri">
+                            8. IU. TRUE or FALSEDirections: Read and understand the following statements. Write Tif the statement is TRUE and F if Its FALSE. Welte your answer on tospace provided26. Fiber-Optic Cabling uses electrical signals for data transmission.27. Wireless connection uses radio signals, satellite transmissions, or infrared technology for data transmission28. A local area network is a group of interconnected devices that is under a single administrative control group.29. A wide area network is a network that connects two or more local-aroa networks that are in geographically separated location.30. Wireless area network is a local area network that uses wireless devices to send and recelve data through radio waves.31. Copper Cabling uses fiber to transmit data as light pulses,32. 8 bits is equivalent to 4 bits.33. Bandwidth is the amount of data which could be transmitted within a fixed period,34. TCP is the dominant standard for internet-working and represents a set of public standards.35. A peer-to-peer Network is the network, where the hosts are directly connected to one another without any networking device betw27348475​</h2><br />
+                        <p><strong>Answer:</strong></p>ttffttfftt<p><strong>Explanation:</strong></p><p>sana makatulong</p><br />
+                                            <h2 class="ez-toc-section" id="what-i-can-do-jo-picture-analysis-instructions-look-at-the-picture-shown-below-explain-the-significance-of-this-picture-to-the-concepts-of-trends-and-networks-using-a-50-word-essay-vrite-this-in-yo">
+                            9. What I Can Do JO PICTURE ANALYSIS Instructions: Look at the picture shown below. Explain the significance of this picture to the concepts of trends and networks using a 50-word essay. Vrite this in your activity notebook. http://darrentnet blogspot.com/2017/02/understanding-local-networks.html​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>For me, this picture shows that network is connected, and because of that we are able to call even if far away. Trends are important because if a person saw a good idea she can video her or she can post a picture so that everyone can see. When her post was amazing and helpful then her idea will be spread to the world. Network and trends make work easier and because of that lets not do something bad to it because when it starts it's hard to stop.</strong></p><p></p>Hope it helps.<br />
+                                            <h2 class="ez-toc-section" id="1-community-situations-vary-and-each-community-has-its-own-context-and-realities-in-order-to-understand-these-context-and-realities-one-should-a-propose-plan-and-programs-for-the-benefit-of-the-c">
+                            10. 1. Community situations vary and each community has its own context and realities. In order to understand these context and realities, one should: a. propose plan and programs for the benefit of the community, b. provide strategies meant to enhance the quality of life in a community. c. conduct benchmarking to have a clear picture of the community. d. implement plan of actions to address the needs of the community. 2. Understanding Community Dynamics makes networking favorable. This can be done through: a. understanding the attitude of the people living in the community.b. strong partnership with schools, institutions, groups or other local organizations. c. strict implementation of the community's rules and norms. d. in-depth analysis of the community's strengths and challenges. 3. Which of the following should an outsider do in order to fully. understand the context of a community and to provide necessary help? a. Undertake a dialogue with the community. b. Implement actions to address the problems. c. Provide preliminary project planning. d. Establish networking and partnership.  4. It is referred to as the process of understanding the communities" problems and struggles in order to provide solutions to these through community action and project implementation. a. community Action b. Socialization c. Community Engagement d. Community Dynamism 5. Which among the following is NOT an importance of understanding a community? a. Provides an opportunity to understand the community's dominant rules and norms b. Provides an occasion to gauge the attitude and behavior of the community c. Provides an avenue to understand the community context even if it does not provide any solutions to the problems. d. Provides a way for a more directed and well-informed dialogue with the community​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.a</p><p>2.d</p><p>3.c</p><p>5.b</p><p><strong>Explanation:</strong></p><p>pa rate nalang po thank you</p><br />
+                                            <h2 class="ez-toc-section" id="d-suggested-enrichmentreinforcement-activ-directions-please-answer-these-four-4-questions-write-your-answers-on-the-separate-sheet-of-paper-each-question-is-worth-5-points-total-20-points-5">
+                            11. D. Suggested Enrichment/Reinforcement Activ Directions: Please answer these four (4) questions. Write your answers on the separate sheet of paper. Each question is worth 5 points. Total - 20 points. 5 - Excellent 4 - Good 3 - Average 2 - Fair 1 - Poor 1. What are the key advantages when you get relevant information from Tour Operators and Travel Agents compared to other sources? Explain. 2. What is your understanding on this phrase: “Never use the internet only for references/information, it is important to make direct contact with real people"? 3. As a tour guide, why is it important and vital to develop an extensive network of personal contacts? 4. What do you think are the information that you could acquire from local identities and personalities that you could not probably get from other sources? Explain.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.The biggest advantage of package tours is the cost. Since the cost of all transfers, entrance fee to various sights, accommodation and meals are included, the price of the tour is most definitely been set at a reasonable range, aside from your choice of airlines and hotel grades.</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="this-activity-will-enrich-your-understanding-of-mobile-devices-true-or-false-read-each-statement-below-carefully-write-t-if-you-think-thestatement-is-true-write-f-if-you-think-the-statement-is-f">
+                            12. 
+This activity will enrich your understanding of mobile devices.
+True or False: Read each statement below carefully. Write T if you think the
+statement is TRUE. Write F if you think the statement is FALSE.
+1. Mobile devices are designed to be extremely portable, and they can often fit
+in your hand.
+2. Mobile devices have wireless data network interface for accessing internet
+(Wi-Fi or cellular data connection)
+111
+3. Mobile devices do not have mobile operating system.
+4. Applications (apps) of mobile devices can be acquired through different
+means (web, included with the operating system, or provided by wireless data
+carrier).
+5. Mobile devices do not have size and weight that allows them to be carried in
+one hand and manipulated with the other hand
+6. Mobile devices have data synchronization capabilities with separate
+computer or remote servers.
+7. Mobile devices do not have local non removable data storage.
+8. The most common size of mobile device is pocket-sized that can be
+handheld.
+9. What makes the mobile device unique compared to other technologies is
+inherent flexibility in the hardware and also the software.
+10. Mobile devices have long lasting battery.</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. T</p><p>2.T</p><p>3.F </p><p>4.T </p><p>5.F</p><p>6.T </p><p>7.F</p><p>8.T</p><p>9.F</p><p>10.T </p><p></p><p><strong>Explanation:</strong></p><p>Hope it helps</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="test-11-direction-choose-the-words-in-the-box-that-best-designate-a-sample-of-8-jobs-you-can-get-with-an-entrepreneur-degree-write-the-words-on-the-space-provided-teacher-recruiter-sales-busines">
+                            13. TEST 11: Direction: Choose the word/s in the box that best designate a sample of 8 jobs you can get with an entrepreneur degree. Write the word/s on the space provided. Teacher Recruiter Sales Business Reporter Business Consultant Mid-Level Management Not for Profit Fundraiser Research &amp; Development 1.8 best job you can get when you get Entrepreneurship Degree. 8 POINTS 1. Well suited for this opportunity - 2. Training to help identify things that others may not pick up on and the training to know how to fix them 3. Know how to represent a company, manage accounts, and follow up on leads, 4. Requires understanding the importance of business and networking relationships 5. Teach them the benefits of math to business, history to innovation, and literature to persuasive advertising. 6. You most likely have a keen sense of what type of person is needed to fill us a position, 7. You are in a prime position to take the lead on covering a local business beat. 8.A good qualification to work in R&amp;D is a training and education understanding of business procedures, and practices and entrepreneurship​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.  Mid-Level Management </p><p>2.  Business Consultant</p><p>3. Sales</p><p>4. Not for Profit Fundraiser </p><p>5. Teacher</p><p>6. Recruiter </p><p>7. Business Reporter</p><p>8. Research &amp; Development</p><p><strong>Explanation:</strong></p><p>Hope it help</p><p>Don't worry I research it </p><br />
+                                            <h2 class="ez-toc-section" id="activity-2-across-the-community-now-that-we-have-the-essential-understanding-of-how-to-gather-information-from-different-sources-let-us-try-how-well-we-can-do-on-our-own-try-watching-a-local-news-f">
+                            14. Activity 2: Across the Community Now that we have the essential understanding of how to gather information from different sources, let us try how well we can do on our own. Try watching a local news from any TV networks or try listening from a radio program on the update about COVID -19 Mass Testing in your locality. Then record all relevant information you heard from the news and write it down in your activity notebook. We will do the same on our part so do your best buddy! PERFORMANCE po namin to Sana may mag sagot ng tama​</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p><strong>Explanation:</strong></p><p>sorry need points ehh </p><p></p><p></p><p></p><p></p><p>bata lang ako wag nyo ko report</p><br />
+                                            <h2 class="ez-toc-section" id="activity-vi-try-it-synthesize-the-given-selection-using-summarizing-and-paraphrasing-20-points-1-%e2%80%9cwomen-entrepreneurs-in-the-developing-world-often-face-challenges-that-limit-their-chance">
+                            15. Activity VI TRY IT. Synthesize the given selection using summarizing and paraphrasing. (20 points) 1. “Women entrepreneurs in the developing world often face challenges that limit their chances for success and growth. They often have less access to education than men and have difficulty getting financing on their own. But with an understanding of the essential aspects of doing business – such as planning, financing, networking and marketing – they can overcome those obstacles. That's where the 10,000 Women Initiative comes in. As Faiza Elmasry tells us, it's an investment in education with dividends that benefit the businesswomen, their local communities and their national economies.” Paraphrasing the text:​</h2><br />
+                        <p><strong>Answer:</strong></p><p>the summarize in this text is that a woman entrepreneur in the developing world often faces challenges that limit their opportunities for success and growth. They often have less access to education than men and find it difficult to get financing on their own.This is based on what I understand summarizing in the text above that I read.</p><p></p><p>the paraphrasing in the text I read is the They often have less access to education than men and have difficulty getting financing on their own. But with an understanding of the essential aspects of doing business – such as planning, financing, networking and marketing – they can overcome those obstacles. That's where the 10,000 Women Initiative comes in. in my opinion it is the paraphrasing text</p><p><strong>Explanation:</strong></p><p>Base on understanding </p><p>if Mali po pa correct na lang </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="now-that-we-have-the-essential-understanding-of-howto-other-information-from-different-sources-let-us-ryhow-well-we-can-do-on-our-own-try-watching-a-localnews-from-any-tv-networks-or-try-listening-f">
+                            16. Now that we have the essential understanding of howto other information from different sources, let us ryhow well we can do on our own. Try watching a localnews from any TV networks or try listening from aradio programthe update about COVID 19 MassTesting in your locality. The record all relevantinformation you heard from the news and write itdown in your activity notebook. We will do the sameon our part so do your best buddy! p​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Now we have any technology in our country or community we can get information and different sources of the world and Tv networks to.</p><p><strong>Explanation:</strong></p>Carry on learning and Pa Brainlist po pls at Pa follow.<p></p><br />
+                                            <h2 class="ez-toc-section" id="women-entrepreneurs-in-the-developing-world-often-face-challenges-thatlimit-their-chance-for-success-and-growth-they-often-have-less-access-toeducation-than-men-and-have-difficulty-getting-financing">
+                            17. Women entrepreneurs in the developing world often face challenges thatlimit their chance for success and growth. They often have less access toeducation than men and have difficulty getting financing on their own. But withan understanding of the essential aspects of doing business such as planningfinancing, networking and marketing - they can overcome those obstacles. Thatwhere the 10,000 Women Initiative comes in. As Paiza Elmasry tells us, it's aninvestment in education with dividends that benefit the businesswomen, theirlocal communities and their national economies.Summarize the text​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Contrary to men, women entrepreneur usually faces challenges that blocks their way to development. Nevertheless, giving importance on the essential aspects of business would be a key to avoid themselves from obstacles. </p><br />
+                                            <h2 class="ez-toc-section" id="directions-answer-the-following-questions-and-encircle-only-the-letter-of-your-choice-1-what-is-a-sequential-pattern-of-change-in-recorded-dataa-macrotrend-b-megatrendc-trends2-who-coined-the-t">
+                            18. DIRECTIONS: Answer the following questions and encircle only the letter of your choice.1. What is a sequential pattern of change in recorded data?a. Macrotrend b. Megatrendc. Trends2. Who coined the term megatrend in 1982?Trenda. James Naisbit b. James Naisbitte© John Naisbitt d. John Naisbitte3. What basic test do trends must pass to see if it affects a wide range of people and has a wide range of implications?a. Test of Significance b. Test of Clarificationc. Test of Relevanced. Test of Completion4. What are the larger patterns of broad trends that reshape and transform our lives?a. Macrotrends b. Megatrendd. Megatrends5. What do you call a trend in a global scale?a. Global networkb. Megatrendc. Macrotrendd. Planetary Network6. These are small forces that can stir big changes in communities and institutions around the world.a. Microtrendb. Megatrendc. Fadd. Macrotrends7. This is a temporary or short-lived pattern of group behavior?a. Fadsb. Megatrendc. Microtrendsd. Fad8. The Harlem Shake Dance Craze is an example of?a. Microtrendb. Megatrendc. Fadd. Macrotrends9. Who proposed the 4S Trendspotting model?a. Renh and Lindkvistb. Rhen and Lindkvistt c. Ren and Lindkvistd. Rehn Lindkvist10. What is the sequence of the 4S Trendspotting model?a. Scrutiny, Setup, Surveying, Scenariob. Scenario, Setup, Surveying, Scrutinyc. Setup, Surveying, Scenario, Scrutinyd. Setup, Scrutiny, Surveying, Scenario11. What process under 4S is when you analyze your work to be able to identify a trend or shift?a. Setupb. ScenarioC. Summaryd. Scrutiny12. What process under 4S is when you observe different cultures to grasps what is happening?a. Scenariob. SurveyingC. Scrutinyd. Summary13. This section in the model contains the class' trend analysis.a. Scenariob. SurveyingC. Scrutinyd. Summary14. What is called to someone who starts a trend?a. Trendstarter Trendsetter c. Trendmaker d. Trend Enthusiast15. What refers to the study of trends and how it affects the society?a. Trendology b. Trend Identification Trend-Spotting d. Trend Analysis16. What follows after spotting a trend?a. Trend Clarification b. Trend Specification c. Trend Analysis d. Trend Identification17. These are called as forces of change and that they make trends as they are.a. Trendsetter b. Enablersd. Change drivers18. These may take form as laws, protests or any form as long as it stops a change or delay it?a. Stoppersb. Frictiond. Government19. What is considered to be the most powerful force for change the world today.a. Advocacyb. USA c. Pope d. Technology20. What is considered to be the last line of defense" against technological advancements and application?a. Ideas and Ideologiesd. Moraleb. Religionc. Social and Moral valuesII. UNDERSTANDING LOCAL NETWORKS21. Our relationships are networked. This means thata. We need to relate because we are connected.b. Other Filipinos in the Philippine Archipelago are also my neighbor.c. My human existence is basically social in nature.d. None of the above contradicts the given meaning.c. Driverc. Blockers​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.d</p><p>2.b</p><p>3.a</p><p>4.a</p><p>5.b</p><p>6.d</p><p>7.d</p><p>8.d</p><p>9.a</p><p>10.a</p><p>11.d</p><p>12.b</p><p>13c.</p><p>14.b</p><p>15.a</p><p>16.d</p><p>17a.</p><p>18.c</p><p>19.b</p><p>20.b</p><br />
+                                            <h2 class="ez-toc-section" id="a-multiple-choicedirections-read-and-understand-carefully-the-following-questions-encircle-the-letter-of-the-correct-answer1-it-is-used-to-connect-storage-devices-to-a-motherboarda-ide-cablesc-fi">
+                            19. A. MULTIPLE CHOICEDirections: Read and understand carefully the following questions. Encircle the letter of the correct answer1. It is used to connect storage devices to a motherboarda IDE cablesc. Firewireb. Satad. Ethernet2. Thecables are used to set up local area networks.a. Resistorc. Capacitorb. Ethernetd. Diode3. It is a semiconductor with a solid and non-moving part to pass a charge.aa. Transistorc. Integrated circuit (c)b. Resistord. Sata4. Its function is to store the electrical energy and give this energy again to the circuit when necessary.a. Integrated circuitc. Capacitorb. Dioded. Transistor5. What ESATA stands for?a. Extended serial advanced technology attachmentb. Exterior serial advanced technology attachmentc. Exemplify serial advanced technology attachmentd. External serial advanced technology attachmentpa sagot po plsss asap​</h2><br />
+                        <p><strong>Answer:</strong></p>adcdc<p><strong>Explanation:</strong></p><p>Correct me if I'm wrong</p><br />
+                                            <h2 class="ez-toc-section" id="you-can-do-thistmodified-true-or-false-write-the-word-fact-if-the-statement-is-correct-and-if-it-is-not-changethe-underlined-wordwords-to-make-the-statement-right-write-your-answer-on-the-spacepro">
+                            20. YOU CAN DO THISTMODIFIED TRUE OR FALSE-Write the word FACT if the statement is correct, and if it is not, changethe underlined word/words to make the statement right. Write your answer on the spaceprovided. 1. We are all part of a 'family that would help us understand our own cultural2. and values orientation. It is where a person is Penculturated through immersinghimsell or herself in serving others with the help of other individuals.3. Socialization is a process that every individual undergoes which enables him/herto become part of one's culture throughout his/her life time.4. Singing of Lupang Hinirang is an example of enculturation in school.5. Social media is a new agent of socialization that has influenced people both youngand old.6. Aside from teaching morality and reverence to our Creator, the church also instillscultural appreciation and cultural values that would shape the personality of a child.-7. The true purpose of having a network is to identify cultural and behavioral norms,8. Clan of Juan Dela Cruz is an example of a primary group.9. Project group is an example of a secondary group.10. The true reason for forming networks is economical.11. Members of a dance troupe is an example of in-group.12. In your everyday life in school, your kabarkada is an example of primary group.13. Medicines are very expensive in your local drugstores: Development Agency.14. Bank: You want to buy a house but will never have enough money for it15. The sea is running out of fish because of dynamite fishing: Advocacy Group16. Fe, a domestic helper, is maltreated by her employer in Saudi Arabia. She mustseek help from a government agency known as Overseas Workers WelfareAdministration.17. Non-state institutions function just like the government. In relation to governmentfunctions, its function can be best described as gap-filling.18. Al Gore went to the country to speak about the impacts of climate change. Thiskind of advocacy is the duty provided by a non-state agency called civil organization19. "Education prepares us for the later station of our lives, and to buy the necessitieof life.” This statement implies social needs.20. Education is a social institution through which society's children are taught basacademic knowledge, learning skills, and cultural norms.21. Elementary education belongs to a compulsory formal education.22. 22Self-actualization and 23 productive citizenry are the two most important goa23. of education.24. Grace passing the National Certificate on driving shows scenario of a nonforteducation.25. Middle Class is not considered as a social class.26. As societies evolved and became more complex, it began to elevate some mem27. of the society through 26land acquisition and gaining social status. This is ho27social stratification started in the society.28. The 28upper class are those elite group of people while the 29lower class are t29. underprivileged who struggled to make ends meet on a daily basis.30. In Conflict Theory Karl Marx viewed social stratification as creation of inequbetween the rich and the poor, or the powerful versus the powerless.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>FACT </p><p>BLUFF</p><p>BLUFF</p><p>FACT</p><p>FACT</p><p>FACT</p><p>FACT</p><p>FACT</p><p>BLUFF</p><p>BLUFF</p><p>FACT</p><p>BLUFF</p><p>BLUFF</p><p>BLUFF</p><p>FACT</p><p>BLUFF</p><p>FACT</p><p>BLUFF</p><p>FACT</p><p>FACT</p><p>BLUFF</p><p><strong>Explanation:</strong></p><p>NO NEED EXPLANATION BECAUSE THAT'S CORRECT</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-your-own-understanding-of-this-state-policy-which-states-to-strenthen-the-network-of-public-employment-offices-and-rationalize-the-participation-of-the-private-sector-in-the-recruitment-and-p">
+                            21. What is your own understanding of this state policy which states: to strenthen the network of public employment offices and rationalize the participation of the private sector in the recruitment and placement of workers, locally and overseas to serve national development objectives?​</h2><br />
+                        <p>answer:hinde konalam              bye    </p><br />
+                                            <h2 class="ez-toc-section" id="true-or-false-1-self-fulfilment-strengthens-the-volunteer%e2%80%99s-ability-to-fulfill-his-or-her-purpose-or-mission-as-a-citizen-through-active-contribution-of-time-expertise-and-talents-%c2%a0-t">
+                            22.  TRUE OR FALSE 1 .Self-fulfilment strengthens the volunteer’s ability to fulfill his or her purpose or mission as a citizen through active contribution of time expertise, and talents.   True or false 2.Community Organizing improves the living condition of assisted individuals, institution or community by providing access to basic services and building staff and organizational capacities. 3.The Philippine congress passed the Republic Act 9841 or the volunteer act of 2007 that aims to integrate the efforts of the various sectors engaged in volunteering to support national development and international understanding. 4.Volunteerism in academe is in the form of Networks and Self-fulfillment sharing in the community, as well as in enriching knowledge management through research and curriculum development. 5.International volunteer service organizations deploy Filipino Volunteers to provide technical assistance especially in areas where local expertise is not really available6. Volunteerism in the government is implemented by enjoining Non-Government Agencies to set up volunteer programs to provide opportunities for the public sector.KAILANGAN KO PO NGAYON ANG SAGOT NYO MARAMING SALAMAT PO ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.TRUE</p><p>2.TRUE</p><p>3.FALSE</p><p>4.TRUE</p><p>5.TRUE</p><p>6.FALSE</p><p>That's my answer I hope it helps</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/bLHB-KFR47o?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>english</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/halili-beer-bottle-price.html">Halili Beer Bottle Price</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/ausubel-s-meaningful-verbal-learning-subsumption-theory.html">Ausubel s Meaningful Verbal Learning Subsumption Theory</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/ang-pagbagsak-ng-imperyong-romano.html">Ang Pagbagsak Ng Imperyong Romano</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/banana-peel-as-charcoal.html">Banana Peel As Charcoal</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/anggulo-ng-kamera.html">Anggulo Ng Kamera</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/mensahe-ng-butil-ng-kape.html">Mensahe Ng Butil Ng Kape</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/halimbawa-ng-agenda.html">Halimbawa Ng Agenda</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/agawan-base-mechanics.html">Agawan Base Mechanics</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/mga-hayop-na-nakatira-sa-lupa.html">Mga Hayop Na Nakatira Sa Lupa</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/sino-si-placido-penitente.html">Sino Si Placido Penitente</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/ang-pinagmulan-ng-wika-sa-pilipinas.html">Ang Pinagmulan Ng Wika Sa Pilipinas</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/man-s-short-life-and-foolish-ambition-essay.html">Man s Short Life And Foolish Ambition Essay</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/mga-bahagi-ng-pahayagan.html">Mga Bahagi Ng Pahayagan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/walang-panginoon-ni-deogracias-rosario.html">Walang Panginoon Ni Deogracias Rosario</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/bloom-s-taxonomy-table-of-specification.html">Bloom s Taxonomy Table Of Specification</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/author-s-bias-examples.html">Author s Bias Examples</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/sinaunang-kabihasnang-greece.html">Sinaunang Kabihasnang Greece</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/motibo-ng-imperyalismo.html">Motibo Ng Imperyalismo</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/disney-songs-with-allusions.html">Disney Songs With Allusions</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/culture-and-tradition-in-region-4-philippines.html">Culture And Tradition In Region 4 Philippines</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://talkedukasi.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://talkedukasi.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://talkedukasi.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://talkedukasi.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://talkedukasi.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/b4/f1/ef/b4f1ef8dfe59b7fa68754094cf6c8e0e.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

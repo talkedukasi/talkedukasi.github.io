@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Interactive Reading Model - QnA</title>
+    <meta name="description" content="Interactive Reading Model, Reading Models, , , , Jane Flynn, 2016-12-16T23:58:19.000000Z, 20, Interactive reading model based on Rumelhart (1980) and Anderson (1985, www.researchgate.net, 850 x 969, png, , 20, interactive-reading-model, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Interactive Reading Model - QnA" />
+    <meta property="og:description" content="Interactive Reading Model, Reading Models, , , , Jane Flynn, 2016-12-16T23:58:19.000000Z, 20, Interactive reading model based on Rumelhart (1980) and Anderson (1985, www.researchgate.net, 850 x 969, png, , 20, interactive-reading-model, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Interactive Reading Model - QnA" />
+    <meta name="twitter:description" content="Interactive Reading Model, Reading Models, , , , Jane Flynn, 2016-12-16T23:58:19.000000Z, 20, Interactive reading model based on Rumelhart (1980) and Anderson (1985, www.researchgate.net, 850 x 969, png, , 20, interactive-reading-model, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://talkedukasi.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://talkedukasi.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://talkedukasi.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://talkedukasi.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://talkedukasi.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://talkedukasi.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://talkedukasi.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://talkedukasi.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Interactive Reading Model</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">varcher</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Interactive+Reading+Model" alt="Interactive Reading Model">
+                    </div>
+                    <p></p>
+                    <p>What is the meaning of Interactive reading model
+What is this about?
+Give the idea about this model</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-meaning-of-interactive-reading-modelwhat-is-this-aboutgive-the-idea-about-this-model">1.
+                                            What is the meaning of Interactive reading model
+What is this about?
+Give the idea about this model</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-when-does-one-normally-apply-the-bottom-up-reading-model-cite-specific-instaces-2-how-are-top-down-and-interactive-reading-models-related-provide-practical-applications-of-the-said-reading-models">2.
+                                            1 When does one normally apply the bottom-up reading model? Cite specific instaces 2. How are top-down and interactive reading models related? Provide practical applications of the said reading models.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#explain-in-your-own-words-the-diagram-developed-by-rummelhart-about-the-interactive-reading-model-%e2%80%8b">3.
+                                            Explain in your own words the diagram developed by Rummelhart about the interactive reading model.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#iactivitiesdirection-read-each-statement-below-carefully-write-t-if-the-statement-is-true-supply-the-correct-word-for-the-underlined-word-if-the-statement-is-false-use-thegroup-of-words-below-for-y">4.
+                                            IACTIVITIESDIRECTION: Read each statement below carefully. Write T if the statement is true.Supply the correct word for the underlined word if the statement is false. Use thegroup of words below for your answer.1. The trauisport layer not only defines how data is sent, but also provideswlidation and firewall security.2. The network layer seeks for the best-known path to route informationto reach its destination similar to searching for all address on a GPS.3. We call it single mode when device takes turns transmitting such asoccurs when speaking through walkie talkie.4. The session layer is the user interface that internet users interact withito send or receive data through email, online games, peer to peer file transfer, andother applicationis.5. The Open System Interconnection Reference Model (OSI Referencemodel or OSI Model) is an abstract description for layered communications andcomputer network protocol design.CWwayなのに​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#b-multiple-choice-read-each-statement-carefully-write-the-letter-of-the-correct-answer-6-interpersonal-communication-is-also-known-as-a-mass-communication-b-public-communication-de-c-dyadic-co">5.
+                                            B. multiple choice: read each statement carefully. write the letter of the correct answer. 6. interpersonal communication is also known as a. mass communication b. public communication de c. dyadic communication d.virtual reality 7. smiling at a stranger at a shopping mall as you walk by them is an example of a. verbal communication c. non-verbal communication b. written communication d. visual communication 8. in the communication interaction model, feeling nauseated as you listen to your teacher discussing the lesson in class is an example of because it interferes with the communication process a. context b. noise c. message d. feedback 9. how we sit, stand, and use facial expressions all send non-verbal messages. a. true b. false c. maybe d. sort of 10. the environment in which communication takes place is referred to as a. channel b. context c. noise d. source​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-the-one-that-encodes-the-message-first-a-receiver-b-sender-c-decoder-channel-2-it-is-considered-as-hindrances-to-effective-communication-a-encoder-b-decoder-c-channel-d-noise-3-the-medium">6.
+                                            1. The one that encodes the message first A. receiver B. sender C. decoder channel 2. It is considered as hindrances to effective communication A. encoder B. decoder C. channel D. noise 3. The medium thru which the message is being transfer A. encoder B. decoder C. channel D. noise 4. The one that decodes the message A. receiver B. sender C. channel D. feedback 5. It is the one of the most important elements of communication referring to the result of monitoring of the listener's response A. receiver B. sender C. channel D. feedback B. Determine whether the given in each number is an example of verbal or nonverbal form of communication. Use (/). VERBAL NONVERBAL 1. Telephone conversation ] 2. Smiling [ ] 3. Job Interview [ 1 4. Waving of hands [ ] 5. Shaking your head [ ] ] C. Choose among the following functions of communication for your answers. Write your answer on the space provided. A. CONTROL B. EMOTIONAL EXPRESSION C. INFORMATION DISSEMINATION D. MOTIVATION E. SOCIAL INTERACTION 1. Communication functions to give confidence for one to live a better life. 2. Communications functions to facilitate people's expressions of their feelings and emotions. 3. Joanna greets Ross and they start talking about their experiences during weekend. What is the function of communication being used? 4. Arabela shares her sadness with Tiffany. What is the function of communication being used? 5. The teacher reads and discusses classroom policies to her students, D. Tell whether the statement about models of communication is TRUE or FALSE. 1. Communication models are unsystematic representations of the process which helps in understanding how communication works can be done. 2. President giving his State of the Nation Address (SONA) on the national television is an example of finear communication. 3. Linear model of communication is one-way, the message flows in a straight line from sender to the receiver. 4. Aristotle model of communication is considered as the "Mother of all Models". 5. Wilbur Schramm was the first to feature feedback-verbal and nonverbal - into a model of communication.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#11-4-5-1-a-directions-write-t-if-the-statement-is-true-and-write-fif-it-is-false-use-this-answer-sheet-the-rubric-1-2-ctivity-3-b-directions-read-each-item-carefully-then-choose-the-letter">7.
+                                            11 4. 5. 1 A. Directions: Write T if the statement is TRUE and write Fif it is FALSE. Use this answer sheet. the rubric 1. 2. ctivity. 3. B. Directions: Read each item carefully then choose the letter that corresponds to your answer. Write your answers on a separate sheet of paper. ht interest you:6. Which of the following is an example of a one-way communication model? A. A group of teenagers planning for a big event C. The Philippine President delivering his SONA B. The committee finding ways to reach for the less fortunate in their barangay. D. A and B 9. Which communication model focuses on the message sent to the recipient? hline Communication A. Interactive Model B. Transactional model C. Linear Model D. A combination of A and B 7. You ask your sister to put on her mask every time she goes out and she nods in reply. Which model of communication is presented here? -Essential Needs A. Interactive B. Linear C. Conversational D. Transactional 8. Which model of communication portrays a multilayer of communication processes where the characters and environment change overtime? A. Interactive model B. Transactional model C. Linear model D. ALL of the above 2 10. A strong wind struck as Arnold and his father took turns in pulling the fishing boat to the shore. Arnold cannot ly The output parti hear his father's voice. Which affects the flow of the communication process? illustrated the A. Arnold's voice B. boat C. father D. wind concepts of natu 11. Myra submitted her report to her teacher online because of the enhanced community quarantine. Which and processes element is missing in the process? communication A. channel B. encoding C. feedback D. receiver 14. Which of the following is NOT a purpose of communication? A. It connects the gaps among persons involved. C. It offers solution to the community problems. The script or B. It narrows down issues and addresses it. D. It paves a way to conflict. dialogue partly clear message 12. The Enhanced Community Quarantine (ECQ) frightened many people here and there. On his social media account, Joshua posted a status of dismay. Many supported his claim, but others opposed it. His status acquired a hundred reactions and the comments thread rose to 75. What model of communication is exemplified? A. Berlo's Model B. Shannon-Weaver Model C. Schramm Model D. Transactional Model The output talks abo 13. In the situation given in #12, what element of communication is NOT present? B. context A. barrier C. feedback D. receiver chosen topic 15. What happens when the message is NOT clearly conveyed? A. The communication continues. C. The recipient may get the wrong information to share with others. B. The communicators end the communication process. D. The situation will never change. re r In 191​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#written-task-1-in-oral-communication-instruction-use-the-answer-sheet-provided-in-answering-the-written-task-1-shade-the-circle-that-corresponds-to-your-answer-read-and-comprehend-each-statement-or">8.
+                                            Written Task 1 in ORAL COMMUNICATION Instruction: Use the answer sheet provided in answering the written task 1. Shade the circle that corresponds to your answer. Read and comprehend each statement or question before answering. 1 It is an exchange of thoughts, messages, ideas, feelings, emotions and knowledge between sender and the receiver A. verbal B. communication C. process D. dynamic 2 Tapping, handshakes of shoulders and hugging are examples of A. Kinesics B. proxemics C. haptics D. chronemics 3 This explains universal meaning of the use of colors. A. Kinesics B. proxemics C. haptics D. chronemics 4 This includes the pitch, volume, tone that allow us to emphasize parts of a message. A. Kinesics B. proxemics C. haptics D. chronemics 5 It happens when the interaction uses words to relay messages. A. verbal B. communication C. process D. dynamic 6 This explains the use of time that speakers use to communicate message. A. Kinesics B. proxemics C. haptics D. chronemics 7 It is a one-way process of communication; it does not have feedback throughout the communication process. A. Linear Model B. Interactive C. Transactional D. Berlo's SMCR 8 This can disrupt or alter a message between sender and receiver. C. noise B. receiver D. channel A. sender 9 It is a model that emphasizes the importance of encoding and decoding messages. A.Shannon-Weaver B. Berlo's SMCR D. Barnlund's C. Westlley and Maclean Transactional 10 A model that explores interpersonal, immediate-feedback communication. D. Barnlund's Weaver C. Westlley and Maclean B. Berlo's SMCR.  ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#g-306ondirections-read-each-question-carefully-then-write-the-letter-that-corresponds-to-your-shswer-on-the-spaceprovided-before-each-number1-the-transmission-of-ideas-and-emotions-between-or-among">9.
+                                            G 306onDirections: Read each question carefully then write the letter that corresponds to your shswer on the spaceprovided before each number,1 The transmission of ideas and emotions between or among persons with the use of verbal and nonverbal cuos isa communicationb. cooperationG socializationd transaction2. This is the process of communication that refers to the use of wordless cues in order to convey a messagenonverbal communication b oral communication c verbal communication d written communication3. Which of the following communication models presents communication as a one-way activity in which information flowsfrom the sender to the receiver?a interactive communication model b helical model c. linear communication model d transactional model4. Which valid inference can be made based on the communication models? Communication isa a systematic process that can be done in different waysb only for people with advanced cntical thinking skillsc only applicable in certain situationsd a complicated process5. When listening to someone what should you be doing?a Eatingb Paying attention and asking questions c. Slouchingd. Talking6 James woke up in the middle of the night only to find that their house had caught fire. Which of the following should he doto convey the message to his family members in the other rooms of their house?a Speak slowly b. Walk slowly c Whisperd. Yell7 Which of the following is NOT among the functions of communication?a definitionb informationc. motivationd. regulation8. Who among the following can you get reliable information about the country's economy?a an unemployed neighbora history teacherban economic analystd a street vendor9. This is a type of speech context in which only one participant acts as both the sender and the receiver of the message.a Dyadb. Intrapersonalc. Interpersonal d. Public10. The small group of communication is composed of how many members of communicators?b. ONOc. three to twelve d thirteen to twentyDirections Classify the given situations according to SPEECH CONTEXT Write vanwar before the​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#learning-task-1-read-and-understand-the-following-statement-if-the-statement-is-correct-write-%e2%80%9c-push%e2%80%9d-and%e2%80%9cpull-if-not-write-your-answer-on-the-space-provided-1-the-role-of">10.
+                                            LEARNING TASK 1: Read and understand the following statement if the statement is correct write “ PUSH” and“PULL if not". Write your answer on the space provided.1. The role of official is very crucial in a sporting endeavor.-2. A primary value of officiating is to provide a benefit to those with whom one interacts in thecompetition area.3. Social qualities refer to the ability to deal with others at one given situation.4." Be accurate and Responsible", these values mean that the athlete should strive for their play.5. Integrity refers to firm adherence to an ethical code as well as to the absence of impairment.6. "Adhere to legal standards", this means violating the rule.7. Officiating is an important part of any sports activity whether it is competitive or recreational.8. Sports officiating is not just all about " judge role in the court" but also benefits us improving ourfitness.9. 30 second time out also called illegal touching.10. "model appropriate health habits means obeying the law.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#9-sample-multiple-choice-test-1-top-down-models-is-also-called-as-a-inside-the-head-view-c-serial-models-b-parallel-models-d-data-driven-processes-2-the-following-are-bottom-up-models-e">11.
+                                            9: Sample Multiple Choice Test 1). Top-down models, is also called as, a). inside-the-head view c). serial models b). parallel models d) data-driven processes 2). The following are bottom-up models, except for, a). text-based view c). text-driven models b) parallel models d). serial models 3). Interactive models, is also called as, a). text-driven models c). parallel models b). inside-the-head view d). serial models 4). Lower-level skills are also called as, a). identification c). inferential b). interpretation d). social context 5). Which of the following is an interactive, socio-cognitive process ..., involving a text, a reader, and a social context within which the activity of reading takes place? a). writing c). listening b). reading d). understanding .​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#the-teacher-reads-and-discusses-classroom-policies-to-the-students-what-model-of-communication-is-this-linear-interactive-transactional-conversation-%e2%80%8b">12.
+                                            the teacher reads and discusses classroom policies to the students what model of communication is this linear, interactive, transactional conversation? ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#b-multiple-choice-read-each-statement-carefully-write-the-letter-of-the-correct-answer-6-interpersonal-communication-is-also-known-as-a-mass-communication-b-public-communication-de-c-dyadic-co">13.
+                                            B. Multiple Choice: Read each statement carefully. Write the letter of the correct answer. 6. Interpersonal communication is also known as a. mass communication b. public communication de c. dyadic communication d.virtual reality 7. Smiling at a stranger at a shopping mall as you walk by them is an example of a. verbal communication c. non-verbal communication b. written communication d. visual communication 8. In the communication interaction model, feeling nauseated as you listen to your teacher discussing the lesson in class is an example of because it interferes with the communication process a. context b. noise c. message d. feedback 9. How we sit, stand, and use facial expressions all send non-verbal messages. a. true b. false c. maybe d. sort of 10. The environment in which communication takes place is referred to as a. channel b. context c. noise d. sourceâ€‹</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#quarter-1directions-read-each-item-carefully-and-encircle-the-letter-that-represent-your-answer-1-it-is-the-exchange-of-thoughts-messages-or-information-as-by-speech-signals-writing-or-behavior">14.
+                                            Quarter: 1Directions: Read each item carefully and encircle the letter that represent your answer.1. It is the exchange of thoughts, messages, or information as by speech, signals, writing or behavior.A. signal B. language c. Communication D. Information2. This body language shows that one is listening,A. looking away B. nodding and eye contact C. staring at the window D. slouching3. It is the sender of the message.A. listener B. receiver C. recipient D. speaker4. It is the content of the communication,A. message B. speaker C. Channel D. Barrier5. It describe how the process of communication, show the relationship among variables and help find andrepair problems in communicationA. Communication Model B. Communication Breakdown C. Misinformation D. Transaction6. He is the one who introduced the Linear Model of Communication.A. Aristotle B. Shannon-Weaver C. Wilbur Schramm D. Eugene White7. It shows the important roles of the sender and receivers as communicators as they reverse roles.A. Transactional Model B. Telephone Model C. Interactive Model D. Cyclical Model8. It is found in Interactive Model of Communication,A. Barrier B. Transmitting C. Feedback D. Field of Experience9. What influence the interpretation of conversation to effective communication?A. Noise B. Feedback c. Signal D. Source10. Which barrier includes the mental conditions of the listener?A. Physiological barrier B. Psychological Barrier C. Physical Noise c. Noise​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#%c2%a0read-each-statement-and%c2%a0identify-what%c2%a0models-of-communication-on-the-following-statement-write-the-correct-answer-on-your-sheet-1-a-communication-model-inspired-by-a-helix-the-commu">15.
+                                             Read each statement and identify what models of communication on the following statement. Write the correct answer on your sheet.1. A communication model inspired by a helix. The communication progresses with age as our experience and vocabulary increases.2. The senders and receivers both are known as communicators and both play equally important roles in communication.3. The communication of individuals are simultaneously engaging in the sending and receiving of messages.4. It makes the understanding of any concept easy and clear.5. It is a model of communication that shows social interaction where at least two interacting agents share a common set of signs.6. The message flows in a straight line from sender to the receiver. There is no concept of feedback.7. It was designed to mirror the functioning of radio and telephone technology.8. It is a model of communication mostly used for new media like the internet.9. It is a speaker centered model as the speaker has the most important role in it and is the only one active.10. The conceptual models used to explain the human communication process.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#il-modified-true-or-false-read-and-analyze-each-sentence-carefully-write-true-if-thestatement-is-correct-and-changed-the-underlined-word-or-phrase-if-the-statement-is-incorrect-write-your-answers-on">16.
+                                            IL MODIFIED TRUE or FALSE. Read and analyze each sentence carefully. Write true if thestatement is correct and changed the underlined word or phrase if the statement is incorrect.Write your answers on a separate sheet.1. Informal group is a type of group with small and having intimate andpersonal relationship among members.2. Group is a number of individuals who have common identity, interactwith one another, and feel belonging together.3. The out-group is commonly viewed as outsiders by the in-group.4. Social organization is a process of bringing order and meaning intohuman social life.5. Interaction occurs when the action of one person causes another personor person to act.6. The in-group is the group with which the individual identifies and whichgives him a sense of belonging, solidarity, camaraderie, esprit de corps, anda protective attitude toward the other members.7.Secondary Groups refer to the degree to which the members of a grouphave the ability to function and interact together towards the pursuit of theirgoals.8. Gesellschaft is a type of group which is characterized by impersonal,secondary, contractual, and rationalized relationships.9. The primary groups are groups which are important to us as modelseven though we ourselves may not be a part of the group.10. Secondary groups are the initial groups that a person joins and theyprovide him or her with experiences in social relations.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#read-the-interactive-session-and-discuss-the-following-questions-below-source-5-a-u-s-army-and-marine-corps-battlefield-logistics-by-alan-dennis-shortly-after-the-gulf-war-in-1991-desert-storm">17.
+                                            Read the interactive session and discuss the following questions below.
+Source: 5-A U.S. ARMY AND MARINE CORPS BATTLEFIELD LOGISTICS by Alan Dennis.
+Shortly after the Gulf War in 1991 (Desert Storm), the U.S. Department of Defense realized that there were significant problems in its battlefield logistics systems that provided supplies to the troops at the division level and below. During the Gulf War, it had proved difficult for army and marine units fighting together to share supplies back and forth because their logistics computer systems would not easily communicate. The goal of the new system was to combine the army and marine corps logistics systems into one system to enable units to share supplies under battlefield conditions.The army and marines built separate as-is process models of their existing logistics systems that had 165 processes for the army system and 76 processes for the marines. Both process models were developed over a 3-month time period and cost several million dollars to build, even though they were not intended to be comprehensive.I helped them develop a model for the new integrated battlefield logistics system that would be used by both services (i.e., the to-be model). The initial process model contained 1,500 processes and went down to level 6 DFDs in many places. It took 3,300 pages to print. They realized that this model was too large to be useful. The project leader decided that level 4 DFDs was as far as the model would go, with additional information contained in the process descriptions. This reduced the model to 375 processes (800 pages) and made it far more useful.
+Questions
+1. What are the advantages and disadvantages to setting a limit for the maximum depth for a DFD?
+2. Is a level 4 DFD an appropriate limit? Why? Why not?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#read-each-item-carefully-write-the-letter-of-your-answer-use-capital-letters-only-1-during-discussion-bea-asks-her-teacher-about-the-difference-between-connotative-and-denotative-meaning-of-word">18.
+                                            Read each item carefully. Write the letter of your answer. Use CAPITAL LETTERS only.  1. During discussion, Bea asks her teacher about the difference between connotative and denotative meaning of words. What element of communication is being played by Bea? She acts as the A channel B. message C. receiver D. sender 2 People encounter different kinds of problems, sometimes we face it alone without knowing that it is a best medicine for us if we will practice sharing it to other people for them to at least help us. What function of communication is evident in this scenario? A. informativeB. instructive C. persuasive D. therapeutic 3. Sometimes, it is hard for us to communicate with other people especially if the noise is very loud. What barrier to effective communication is evident in this scenario? A. language B. physical C. semantic D. socio 4. Schramm Model shows ____ communicationA. interactive. C. motive B. linear D. transactional 5. It was Kalei's turn to speak when she felt nervous and paused. She tried to open her mouth, but she just mumbled. What barrier is being shown in the situation? A cultural B. linguistic C. physical D. psychological​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#multiple-choice-directions-read-each-itern-carefully-and-write-the-letter-of-your-sosyer-1-which-of-the-following-elements-is-missing-in-the-linear-model-a-feedback-c-receiver-b-noise-dsender">19.
+                                            Multiple Choice DIRECTIONS: Read each itern carefully, and write the letter of your Sosyer. 1. Which of the following elements is missing in the linear model? a. Feedback C. Receiver b. Noise dSender 2. This model of communication shows how components are influenced by different factors like communication skills. a. Aristotle's Model C. Schramm's Model b. Berlo's Model dShannon- Weaver Model 3. It is a type of communication model which is primarily described as one-way process of communication. a. Linear C. Transactional b. Interactive d Conversational 4. It is a type of communication model in which senders and receivers both are known to be communicators. a. Linear c. Transactonal b. Interactive d. Conversational 5. This model of communication is known to be a mother of all models a. Aristotle's Model C. Schramm's Model b. Berlo's Model d. Shannon-Weaver Model​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-identification-read-each-item-carefully-and-write-the-correct-answer-in-the-space-provided-before-each-number-1-this-model-is-more-interactive-and-it-shows-that-a-barrier-such-as-noise-may-int">20.
+                                            1. IDENTIFICATION. Read each item carefully and write the correct answer in the space provided before each number. 1. This model is more interactive and it shows that a barrier, such as noise, may interfere with the flow of communication. 2. This is a Model of Communication that is a two-way process and includes feedback as one of its elements. 3. This model of communication is mostly used on the internet. 4. In this model, communication is considered way process where the sender is the only one who sends a message and the receiver doesn't give feedback or response. 5. These are structured representations of the process that helps in understanding how communication can be carried out. 6. He is known as the "father of mass communication." feedback in this model. 7. One example of this communication model is the Human-computer interaction. 8. The proponent of the Linear Model of Communication. 9. Non-verbal feedback like gestures, and body language, is also considered as 10. Give your example of the Linear Model of Communication​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-i-knowactivity-1-lets-check-your-prior-knowledge-directions-read-each-item-carefully-write-true-if-the-statement-is-trueand-write-false-if-the-statement-if-false-write-your-answers-in-your">21.
+                                            What I KnowActivity 1. Let's check your prior knowledge...Directions: Read each item carefully. Write TRUE if the statement is trueand write FALSE if the statement if false. Write your answers in your ActivityNotebook.1..Inquiry is in the form of authentic (real-life) problems within thecontext of the curriculum and / or community.2. The inquiry capitalizes on students' curiosity.3.Data and information are actively used, interpreted, refined, digestedand discuss. Teachers, students and teacher-librarian collaborate.Community and society are connected with the inquiry.5 Teachers take ownership of their learning.6. The teacher and students interact more frequently and more activelythan during traditional teaching.7 There is an identifiable time for inquiry-based learning.8. The teacher uses body language in doing inquiry.9The teacher facilitates the process of gathering and presentinginformation.10. The teacher models the behaviors of inquiry.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#datepart-i-read-the-following-statements-carefully-identify-what-is-being-described-in-eachitem-choose-your-answers-from-the-choices-inside-the-box-a-hypertextb-intertextc-both1-snow-glass-a">22.
+                                            Date:Part I. Read the following statements carefully. Identify what is being described in eachitem. Choose your answers from the choices inside the box.A. HypertextB. IntertextC. Both1. Snow, Glass, Apples is a short story by Neil Gaiman. This piece tells the story ofSnow White from the point of view of her stepmother, who was actually trying to savethe kingdom from her bloodthirsty stepdaughter.2. Wicked by Gregory McGuire revolves around the story of the Wicked Witch of theWest from Frank Baum's The Wizard of Oz and reimagines her as the misunderstoodprotagonist, Elphaba.3. Fast City by Don Bosco is an interactive narrative which presents a set of conflictsand psychological landscapes placed within a technology-obsessed urban space.4. The Museum by Adam Kenney emulates the experience of being in a museum byallocating a page to each part of the museum and giving the reader free rein as towhere he/she wants to go by providing links to different 'areas' of the museum,5. Bridget Jones's Diary by Helen Fielding is written in a diary format and chroniclesevents within a year in the life of protagonist Bridget in the 90s; it is loosely based onJane Austen's Pride and Prejudice.6. This creates a network of materials linked because of various connections.7. It is the complex interrelationship between a text and other texts.8. This can also be seen as footnote or commentaries in the margin.9. This is the modelling of a text's meaning by another text.10. It is a non-linear way of presenting information.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pre-testdirections-read-the-paragraph-below-choose-the-letter-of-the-correct-answer-writeyour-answer-on-the-blank-as-our-world-recognizes-increased-globalization-21st-century-learning-refers-to-th">23.
+                                            PRE-TESTDirections: Read the paragraph below. Choose the letter of the correct answer. Writeyour answer on the blank.As our world recognizes increased globalization, 21st century learning refers to the skills and technologies that will position our students to succeed in a world that ever increasingly requires collaboration, critical thinking, adaptability, grit, perseverance and relies less on the learning of facts and data. The how and why of learning becomes central and is far more important than the what or who from past models. Students must approach lifelong learning with a flexible mindset as they tackle 21st century issues. They must learn to work with and listen to a variety of points of view.Technology plays a big part in 21st century learning. The use of podcasts, audio and video blogs and online learning all play into how education is moving and is significant in high schools and universities. The Internet is the connection to our global world. Students will acquire internet navigation skills as they move through our program. The vast array of resources on the Internet provides a wealth of data and students will learn to filter the essential from the nonessential; to incorporate visual images and graphics. The use of the interactive White Board is a valuable classroom tool. Students will have facility with iPads and laptop computers. Jeff Escabar Head of SchoolSource pasionschool.org/21st century learning1. What is the essay all about?A. GlobalizationB. 21 Century LearningC. SkillsD. Technologies2. Who wrote the essay?A. Jeff EscabarB. School HeadC. Spanish in Fusion SchoolD. 21" Century Learning​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#directions-read-each-item-carefully-then-choose-the-letter-that-corresponds-to-your-answer-write-your-answers-on-a-separate-sheet-of-paper-1-which-model-shows-a-one-way-communication-where-the-sour">24.
+                                            Directions: Read each item carefully then choose the letter that corresponds to your answer. Write your answers on a separate sheet of paper.1.	Which model shows a one-way communication where the source of information does not know whether the message is understood or not?a.	Interactive	b. Linear	c. Transactional model	d. A and B2.	Which of the following is an example of a one-way communication?a.	A church leader giving a homily to a crowd of peopleb.	A teacher encouraging students to give their thoughts on a relevant issuec.	Classmates talking about how to accomplish their assignmentsd.	ALL of the above3.	Which model of communication shows the interchange of ideas among different individuals and shows progress in the process?a.	Interactive	b. Linear	c. Transactional	d. NONE of the above4.	Angie works for a fast food company as a cashier. A customer comes in to order sandwich and drinks. What model of communication is described in the given situation?a.	Conversational approachb.	Interactivec.	Lineard.	Transactional Model5.	Which of the following elements affects the flow of any communication process?a.	Barrier	b. Channel	c. Feedback	d. Source6.	Which element is NOT found in Shannon-Weaver model?a.	Barrier	b. Channel	c. Feedback	d. Receiver7.	You and your neighbors would like to initiate a project for the benefit of the elderly in your community. The chairman presented his proposal and ignored his constituents’ suggestions. What model of communication is presented here?a.	Berlo’s Model	b. Schramm Model	c. Shannon-Weaver	d. Transactional Model8.	In the above situation, what element of communication is missing?a.	Barrier	b. context	c. feedback	d. receiver9.	When is a communication considered failed?a.	A negative feedback was given by the recipient of the message.b.	Both sender and receiver stopped the conversation process.c.	The persons involved fixed the problem that provoked in the process.d.	The recipient did not decode the meaning of the message sent.10.	Which of the following is NOT a purpose of communication?a.	It creates blunder that worsens an existing issue or concern.b.	It fosters good relationship among people.c.	It gears towards the solution to a problem.d.	It gives an overview of a national issue for public understanding.
+​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pretest-smile-and-cheer-updirection-compare-and-contrast-the-three-reading-models-using-an-expanded-venn-diagrambottom-uptop-downinteractive%e2%80%8b">25.
+                                            Pretest. Smile and cheer up!
+Direction: Compare and contrast the three reading models using an expanded Venn diagram
+Bottom-up
+Top-down
+Interactive​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-am-i-good-at-let-us-see-how-ready-you-are-as-we-walk-through-with-our-learning-module-a-directions-read-and-analyze-each-item-below-choose-the-letter-of-the-correct-answer-1-what-is-not-a">26.
+                                            What am I good at? Let us see how ready you are, as we walk through with our learning module. A. Directions: Read and analyze each item below. Choose the letter of the correct answer. 1. What is NOT a part of multimedia? D . A. text B. audio C. graphic D. movie 2. These are elements of multimedia EXCEPT D ? A. text B. power point C. video D. images 3. Any combination of text, graphics, and video is called A A. multimedia B. video C. text D. animation 4. What is a still figure with two dimensions? D A. multimedia B. graphics C. audio/sound D. animation 5. The multimedia project format which includes interactive, computer-based models of real-life situations. A. multimedia B. graphics C. simulations D. animation 6. Multimedia is the use of more than one . A. text B. media C. simulations D. text 7. There are main elements in multimedia. A. three B. four C. five D. two 8. It is the most basic fact in multimedia and the most interesting component. A. images B. audio/sound C. animation D. text 9. The most sensuous element of multimedia. A. images B. audio/sound C. animation D. text 10. It can make static presentation come alive and it is visual overtime? A. images B. audio/sound C. animation D. text</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#i-modified-true-false-5-read-the-given-statement-write-true-if-the-statement-is-true-write-false-if-the-statement-is-false-then-underline-false-statement-and-refute-it-by-writing-the-correct">27.
+                                            I. Modified True / False. (5) Read the given statement. Write true if the statement is true. Write false if the statement is false, then underline false statement and refute it by writing the correct idea in the blank provided. 1. In communication process, the initial source which is the medium becomes responsible for the effective communication _______________________________________________________________________ 2. The ability to pay attention and to provide critical feedback are two skills associated with being a good listener. ________________________________________________________________________ 3. The manager who imposes on his subordinates, adapts to interactive way of communication model. ____________________________________________________________________________ 4. In a highly organized business community, language learning is vital rather than language acquisition. ____________________________________________________________________________ 5. Non Verbal Communication causes various interpretation to people. ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-i-knowa-true-or-false-read-each-statement-below-carefully-write-t-if-the-statement-is-trueor-f-if-otherwise_____1-communication-is-normally-intentional_____2-interpersonal-communication-alwa">28.
+                                            What I KnowA. True or False: Read each statement below carefully. Write T if the statement is trueor F if otherwise_____1. Communication is normally intentional_____2. Interpersonal Communication always occurs between two people_____3. If you already consider yourself a good communicator, then how you engageothers does not need to change_____4. Dialog is more personal and intimate in nature than interviews_____5. More often, a conversation is casual or an informal exchange between twopeople with no formal purpose, less intimate, and less serious.B. Multiple Choice: Read each statement carefully. Write the letter of the correct answer6. Interpersonal communication is also known asa. mass communicationc. dyadic communicationb. public communicationd. virtual reality7. Smiling at a stranger at a shopping mall as you walk by them is an example ofa. verbal communicationc. non-verbal communicationb. written communicationd. visual communication8. In the "communication interaction" model, feeling nauseated as you listen to your teacherdiscussing the lesson in class is an example ofbecause it interferes with thecommunication process.a. contextb. noisec. messaged. feedback9. How we sit, stand, and use facial expressions all send non-verbalmessagesa. trueb. false c. maybed sort of10. The environment in which communication takes place is referred to asa. channe!b. contextc. noised. source​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#e-decoding3-this-refers-to-the-process-of-converting-the-messages-into-words-actions-or-otherforms-that-the-speaker-understandsa-speaker-b-message-c-encoding-d-channel-e-decoding4-these-are-the-in">29.
+                                            E Decoding3. This refers to the process of converting the messages into words, actions or otherforms that the speaker understandsA Speaker B Message C. Encoding D Channel E Decoding4. These are the information ideas or thoughts conveyed by the speaker in words or inactionsA Speaker B. Message C Encoding D. Channel E Decoding5. This refers to the medium or the means in which the encoded message is conveyedA Speaker B. Message C. Encoding D. Channel E Decoding6. This is the recipient of the message, or someone who decodes the messageA Receiver B. Feedback C. ContextD. NoiseE Speaker7. These are the factors that affect the flow of communicationA Receiver B. Feedback C. ContextD NoiseE Speaker8. This refers to the environment where communication takes placeA Receiver B. Feedback C. ContextD Noise E Speaker9. These are the reactions responses or information provided by the receiverA Receiver B. Feedback C. ContextD. Noise E Speaker10. This model is known as the "mother of all communication models, which depictscommunication as a linear or one-way processA Shannon-Weaver Model B. Transaction Model C. Schramm ModelFor numbers 11 - 18 identify the function of communication in each of the following situations.The following are your choicesA Control B. Social Interaction C. Motivation D. Emotional Expression E. InfoDissemination11. The teacher reads and classroom policies to her students.12. Ross greatsRachel, then, they start talking about their plans for the holidays.13. Phoebe sharesher insights on how to live peacefully despite a complicated life.14. Monica shares her personal frustrations with Chandler15. The geometry teacher lectures about Mathematical concepts16. The President delivers his State of the Nation Address (SONA)17. Sheila delivers her valedictory speech18. A television personality thanks the supportive movie-goers during an interview1​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-i-knowwhen-was-the-last-time-you-talked-to-someone-or-exchanged-conversationwith-a-group-how-did-it-op-did-it-result-to-something-and-or-did-it-lead-totoisunderstanding-or-conflict-why-do-you">30.
+                                            What I Knowwhen was the last time you talked to someone or exchanged conversationwith a group? How did it op? Did it result to something and or did it lead totoisunderstanding or conflict? Why do you think so?Directions: Read each item carefully then choose the letter that corresponds toyour answer. Write your answers on a separate sheet of paper.DieWhich model shows a one-way communication where the source of inforinationdoes not know whether the message is understood or not?A. InteractiveC. Transactional modelB. LinearD. A and B2. Which of the following is an example of a one-way communication?A. A church leader giving a homily to a crowd of peopleB. A teacher encouraging students to give their thoughts on a relevant issueC. Classrnates talking about how to accomplish their assignmentsD.ALL of the above​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="what-is-the-meaning-of-interactive-reading-modelwhat-is-this-aboutgive-the-idea-about-this-model">
+                            1. What is the meaning of Interactive reading model
+What is this about?
+Give the idea about this model</h2><br />
+                        model in interactive reading model in interactive reading                        <br />
+                                            <h2 class="ez-toc-section" id="1-when-does-one-normally-apply-the-bottom-up-reading-model-cite-specific-instaces-2-how-are-top-down-and-interactive-reading-models-related-provide-practical-applications-of-the-said-reading-models">
+                            2. 1 When does one normally apply the bottom-up reading model? Cite specific instaces 2. How are top-down and interactive reading models related? Provide practical applications of the said reading models.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Learners can be encouraged to use both bottom-up and top-down strategies to help them understand a text. For example in a reading comprehension learners use their knowledge of the genre to predict what will be in the text (top down), and their understanding of affixation to guess meaning (bottom up).</p><p></p><p></p><p></p><p></p><p>The top down method believes students gain understanding from text as they read. It does not specifically teach phonics but rather relies on students making sense of letters and vocabulary as they are exposed to text. The bottom up method, conversely, uses phonics as the primary mode </p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="explain-in-your-own-words-the-diagram-developed-by-rummelhart-about-the-interactive-reading-model-%e2%80%8b">
+                            3. Explain in your own words the diagram developed by Rummelhart about the interactive reading model.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>The interactive reading model, as developed by David E. Rumelhart in 1977, describes a reading process and the way linguistic elements are processed and interpreted by the brain. The model combines both surface structure systems, such as the sensory, bottom-up portion of reading with deep structure systems, such as the thinking, or top-down, aspects of reading to build meaning and memory for all learners</p><p><strong>Explanation:</strong></p><p>How it works:</p>Readers use both knowledge of word structure and background knowledge to interpret the texts they read. For example, a student who encounters an unknown word might use surface structure systems like graph phonic, or letter-sound, knowledge to decode the word. A different student might find it easier to use deep structure systems like semantic knowledge, such as meaning and vocabulary, to decode the same unknown word. Each student makes connections in different ways. This process validates and supports both methods of understanding, realizing that individuals process information in very different ways.Surface structure processing, also known as bottom-up processing, is the sensory portion of reading. This method of understanding uses knowledge of letter-sound relationships, lexical or word knowledge and syntactic or contextual understanding of the text to make meaning of previously unknown material. This type of processing can be assisted by the teaching of phonemic awareness and sentence structure skills. Students who use only surface structure approaches to understanding often find it difficult to comprehend the text.Deep structure processing, also known as top-down processing, is the thinking aspect of reading. This method employs vocabulary knowledge, background knowledge and social construction to derive meaning from text. This type of processing is often easier for poor readers who might have trouble with word recognition but have knowledge of the text topic. Vocabulary instruction is imperative for these learners to build a larger pool of knowledge on which to draw when faced with unknown text.The most evident benefit of this model is the opportunity for the differentiation that it provides students. Students are not required to fit into a set mold or have identical skill sets to decode and interpret text. They are encouraged to use their own strengths to gain understanding and new information. When used in the classroom setting, students should be encouraged to share their knowledge with classmates or peers. This model allows the reader to bring his own background knowledge to reading and to interact with others to build meaning and memory from the text.Hope this helps a lot! :))<br />
+                                            <h2 class="ez-toc-section" id="iactivitiesdirection-read-each-statement-below-carefully-write-t-if-the-statement-is-true-supply-the-correct-word-for-the-underlined-word-if-the-statement-is-false-use-thegroup-of-words-below-for-y">
+                            4. IACTIVITIESDIRECTION: Read each statement below carefully. Write T if the statement is true.Supply the correct word for the underlined word if the statement is false. Use thegroup of words below for your answer.1. The trauisport layer not only defines how data is sent, but also provideswlidation and firewall security.2. The network layer seeks for the best-known path to route informationto reach its destination similar to searching for all address on a GPS.3. We call it single mode when device takes turns transmitting such asoccurs when speaking through walkie talkie.4. The session layer is the user interface that internet users interact withito send or receive data through email, online games, peer to peer file transfer, andother applicationis.5. The Open System Interconnection Reference Model (OSI Referencemodel or OSI Model) is an abstract description for layered communications andcomputer network protocol design.CWwayなのに​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.true</p><p>2true</p><p>3false</p><p>4false</p><p>5true</p><br />
+                                            <h2 class="ez-toc-section" id="b-multiple-choice-read-each-statement-carefully-write-the-letter-of-the-correct-answer-6-interpersonal-communication-is-also-known-as-a-mass-communication-b-public-communication-de-c-dyadic-co">
+                            5. B. multiple choice: read each statement carefully. write the letter of the correct answer. 6. interpersonal communication is also known as a. mass communication b. public communication de c. dyadic communication d.virtual reality 7. smiling at a stranger at a shopping mall as you walk by them is an example of a. verbal communication c. non-verbal communication b. written communication d. visual communication 8. in the communication interaction model, feeling nauseated as you listen to your teacher discussing the lesson in class is an example of because it interferes with the communication process a. context b. noise c. message d. feedback 9. how we sit, stand, and use facial expressions all send non-verbal messages. a. true b. false c. maybe d. sort of 10. the environment in which communication takes place is referred to as a. channel b. context c. noise d. source​</h2><br />
+                        <p><strong>Answer:</strong></p>B. multiple choice: read each statement carefully. write the letter of the correct answer. 6. interpersonal communication is also known as a. mass communication b. public communication de c. dyadic communication d.virtual reality 7. smiling at a stranger at a shopping mall as you walk by them is an example of a. verbal communication c. non-verbal communication b. written communication d. visual communication 8. in the communication interaction model, feeling nauseated as you listen to your teacher discussing the lesson in class is an example of because it interferes with the communication process a. context b. noise c. message d. feedback 9. how we sit, stand, and use facial expressions all send non-verbal messages. a. true b. false c. maybe d. sort of 10. the environment in which communication takes place is referred to as a. channel b. context c. noise d<p><strong>Explanation:</strong></p>B. multiple choice: read each statement carefully. write the letter of the correct answer. 6. interpersonal communication is also known as a. mass communication b. public communication de c. dyadic communication d.virtual reality 7. smiling at a stranger at a shopping mall as you walk by them is an example of a. verbal communication c. non-verbal communication b. written communication d. visual communication 8. in the communication interaction model, feeling nauseated as you listen to your teacher discussing the lesson in class is an example of because it interferes with the communication process a. context b. noise c. message d. feedback 9. how we sit, stand, and use facial expressions all send non-verbal messages. a. true b. false c. maybe d. sort of 10. the environment in which communication takes place is referred to as a. channel b. context c. noise d<br />
+                                            <h2 class="ez-toc-section" id="1-the-one-that-encodes-the-message-first-a-receiver-b-sender-c-decoder-channel-2-it-is-considered-as-hindrances-to-effective-communication-a-encoder-b-decoder-c-channel-d-noise-3-the-medium">
+                            6. 1. The one that encodes the message first A. receiver B. sender C. decoder channel 2. It is considered as hindrances to effective communication A. encoder B. decoder C. channel D. noise 3. The medium thru which the message is being transfer A. encoder B. decoder C. channel D. noise 4. The one that decodes the message A. receiver B. sender C. channel D. feedback 5. It is the one of the most important elements of communication referring to the result of monitoring of the listener's response A. receiver B. sender C. channel D. feedback B. Determine whether the given in each number is an example of verbal or nonverbal form of communication. Use (/). VERBAL NONVERBAL 1. Telephone conversation ] 2. Smiling [ ] 3. Job Interview [ 1 4. Waving of hands [ ] 5. Shaking your head [ ] ] C. Choose among the following functions of communication for your answers. Write your answer on the space provided. A. CONTROL B. EMOTIONAL EXPRESSION C. INFORMATION DISSEMINATION D. MOTIVATION E. SOCIAL INTERACTION 1. Communication functions to give confidence for one to live a better life. 2. Communications functions to facilitate people's expressions of their feelings and emotions. 3. Joanna greets Ross and they start talking about their experiences during weekend. What is the function of communication being used? 4. Arabela shares her sadness with Tiffany. What is the function of communication being used? 5. The teacher reads and discusses classroom policies to her students, D. Tell whether the statement about models of communication is TRUE or FALSE. 1. Communication models are unsystematic representations of the process which helps in understanding how communication works can be done. 2. President giving his State of the Nation Address (SONA) on the national television is an example of finear communication. 3. Linear model of communication is one-way, the message flows in a straight line from sender to the receiver. 4. Aristotle model of communication is considered as the "Mother of all Models". 5. Wilbur Schramm was the first to feature feedback-verbal and nonverbal - into a model of communication.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>A.</p><p>1.B</p><p>2.D</p><p>3.C</p><p>4.A</p><p>5.D</p><p>B.</p><p>1.VERBAL</p><p>2.NONVERBAL</p><p>3.VERBAL</p><p>4.NONVERBAL</p><p>5.NONVERBAL</p><p>C.</p><p>1.D</p><p>2.A</p><p>3.E</p><p>4.B</p><p>5.C</p><p>D.</p><p>1.FALSE</p><p>2.TRUE</p><p>3.TRUE</p><p>4.FALSE</p><p>5.FALSE(not sure)</p><br />
+                                            <h2 class="ez-toc-section" id="11-4-5-1-a-directions-write-t-if-the-statement-is-true-and-write-fif-it-is-false-use-this-answer-sheet-the-rubric-1-2-ctivity-3-b-directions-read-each-item-carefully-then-choose-the-letter">
+                            7. 11 4. 5. 1 A. Directions: Write T if the statement is TRUE and write Fif it is FALSE. Use this answer sheet. the rubric 1. 2. ctivity. 3. B. Directions: Read each item carefully then choose the letter that corresponds to your answer. Write your answers on a separate sheet of paper. ht interest you:6. Which of the following is an example of a one-way communication model? A. A group of teenagers planning for a big event C. The Philippine President delivering his SONA B. The committee finding ways to reach for the less fortunate in their barangay. D. A and B 9. Which communication model focuses on the message sent to the recipient? hline Communication A. Interactive Model B. Transactional model C. Linear Model D. A combination of A and B 7. You ask your sister to put on her mask every time she goes out and she nods in reply. Which model of communication is presented here? -Essential Needs A. Interactive B. Linear C. Conversational D. Transactional 8. Which model of communication portrays a multilayer of communication processes where the characters and environment change overtime? A. Interactive model B. Transactional model C. Linear model D. ALL of the above 2 10. A strong wind struck as Arnold and his father took turns in pulling the fishing boat to the shore. Arnold cannot ly The output parti hear his father's voice. Which affects the flow of the communication process? illustrated the A. Arnold's voice B. boat C. father D. wind concepts of natu 11. Myra submitted her report to her teacher online because of the enhanced community quarantine. Which and processes element is missing in the process? communication A. channel B. encoding C. feedback D. receiver 14. Which of the following is NOT a purpose of communication? A. It connects the gaps among persons involved. C. It offers solution to the community problems. The script or B. It narrows down issues and addresses it. D. It paves a way to conflict. dialogue partly clear message 12. The Enhanced Community Quarantine (ECQ) frightened many people here and there. On his social media account, Joshua posted a status of dismay. Many supported his claim, but others opposed it. His status acquired a hundred reactions and the comments thread rose to 75. What model of communication is exemplified? A. Berlo's Model B. Shannon-Weaver Model C. Schramm Model D. Transactional Model The output talks abo 13. In the situation given in #12, what element of communication is NOT present? B. context A. barrier C. feedback D. receiver chosen topic 15. What happens when the message is NOT clearly conveyed? A. The communication continues. C. The recipient may get the wrong information to share with others. B. The communicators end the communication process. D. The situation will never change. re r In 191​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.A</p><p>2.C</p><p>3.D</p><p>.4B</p><p>5.D</p><p>5.D</p><p>6.C</p><p>7. C</p><p>8.A</p><p>9.C </p><p>10.A</p><p>11. C</p><p>12.b</p><p>13.c</p><p>14.a</p><p>15C</p><p><strong>Explanation:</strong></p><p>correct answer</p><br />
+                                            <h2 class="ez-toc-section" id="written-task-1-in-oral-communication-instruction-use-the-answer-sheet-provided-in-answering-the-written-task-1-shade-the-circle-that-corresponds-to-your-answer-read-and-comprehend-each-statement-or">
+                            8. Written Task 1 in ORAL COMMUNICATION Instruction: Use the answer sheet provided in answering the written task 1. Shade the circle that corresponds to your answer. Read and comprehend each statement or question before answering. 1 It is an exchange of thoughts, messages, ideas, feelings, emotions and knowledge between sender and the receiver A. verbal B. communication C. process D. dynamic 2 Tapping, handshakes of shoulders and hugging are examples of A. Kinesics B. proxemics C. haptics D. chronemics 3 This explains universal meaning of the use of colors. A. Kinesics B. proxemics C. haptics D. chronemics 4 This includes the pitch, volume, tone that allow us to emphasize parts of a message. A. Kinesics B. proxemics C. haptics D. chronemics 5 It happens when the interaction uses words to relay messages. A. verbal B. communication C. process D. dynamic 6 This explains the use of time that speakers use to communicate message. A. Kinesics B. proxemics C. haptics D. chronemics 7 It is a one-way process of communication; it does not have feedback throughout the communication process. A. Linear Model B. Interactive C. Transactional D. Berlo's SMCR 8 This can disrupt or alter a message between sender and receiver. C. noise B. receiver D. channel A. sender 9 It is a model that emphasizes the importance of encoding and decoding messages. A.Shannon-Weaver B. Berlo's SMCR D. Barnlund's C. Westlley and Maclean Transactional 10 A model that explores interpersonal, immediate-feedback communication. D. Barnlund's Weaver C. Westlley and Maclean B. Berlo's SMCR.  ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>hirap basahin lods ayusin mo naman </p><br />
+                                            <h2 class="ez-toc-section" id="g-306ondirections-read-each-question-carefully-then-write-the-letter-that-corresponds-to-your-shswer-on-the-spaceprovided-before-each-number1-the-transmission-of-ideas-and-emotions-between-or-among">
+                            9. G 306onDirections: Read each question carefully then write the letter that corresponds to your shswer on the spaceprovided before each number,1 The transmission of ideas and emotions between or among persons with the use of verbal and nonverbal cuos isa communicationb. cooperationG socializationd transaction2. This is the process of communication that refers to the use of wordless cues in order to convey a messagenonverbal communication b oral communication c verbal communication d written communication3. Which of the following communication models presents communication as a one-way activity in which information flowsfrom the sender to the receiver?a interactive communication model b helical model c. linear communication model d transactional model4. Which valid inference can be made based on the communication models? Communication isa a systematic process that can be done in different waysb only for people with advanced cntical thinking skillsc only applicable in certain situationsd a complicated process5. When listening to someone what should you be doing?a Eatingb Paying attention and asking questions c. Slouchingd. Talking6 James woke up in the middle of the night only to find that their house had caught fire. Which of the following should he doto convey the message to his family members in the other rooms of their house?a Speak slowly b. Walk slowly c Whisperd. Yell7 Which of the following is NOT among the functions of communication?a definitionb informationc. motivationd. regulation8. Who among the following can you get reliable information about the country's economy?a an unemployed neighbora history teacherban economic analystd a street vendor9. This is a type of speech context in which only one participant acts as both the sender and the receiver of the message.a Dyadb. Intrapersonalc. Interpersonal d. Public10. The small group of communication is composed of how many members of communicators?b. ONOc. three to twelve d thirteen to twentyDirections Classify the given situations according to SPEECH CONTEXT Write vanwar before the​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. A. communication</p><p>2. D. written communication</p><p>3. A. interactive communication model</p><p>4. C. only applicable in certain situation</p><p>5. D. talking</p><p>6. C. whisper</p><p>7. D. regulation</p><p>8. B. history teacher</p><p>9. D. public</p><p>10. B. ono</p><p><strong>Explanation:</strong></p><p><strong>t</strong><strong>h</strong><strong>a</strong><strong>t</strong><strong> </strong><strong>i</strong><strong>s</strong><strong> </strong><strong>c</strong><strong>o</strong><strong>r</strong><strong>r</strong><strong>e</strong><strong>c</strong><strong>t</strong><strong> </strong><strong>b</strong><strong>e</strong><strong>c</strong><strong>a</strong><strong>u</strong><strong>s</strong><strong>e</strong><strong> </strong><strong>t</strong><strong>h</strong><strong>i</strong><strong>s</strong><strong> </strong><strong>l</strong><strong>e</strong><strong>s</strong><strong>s</strong><strong>o</strong><strong>n</strong><strong> </strong><strong>w</strong><strong>i</strong><strong>l</strong><strong>l</strong><strong> </strong><strong>b</strong><strong>e</strong><strong> </strong><strong>t</strong><strong>e</strong><strong>a</strong><strong>c</strong><strong>h</strong><strong> </strong><strong>w</strong><strong>e</strong><strong>/</strong><strong>m</strong><strong>e</strong><strong> </strong><strong>l</strong><strong>a</strong><strong>s</strong><strong>t</strong><strong> </strong><strong>w</strong><strong>e</strong><strong>e</strong><strong>k</strong></p><p><strong>p</strong><strong>l</strong><strong>s</strong><strong> </strong><strong>h</strong><strong>e</strong><strong>a</strong><strong>r</strong><strong>t</strong><strong> </strong><strong>a</strong><strong>n</strong><strong>d</strong><strong> </strong><strong>r</strong><strong>a</strong><strong>t</strong><strong>e</strong><strong> </strong><strong>m</strong><strong>y</strong><strong> </strong><strong>a</strong><strong>n</strong><strong>s</strong><strong>w</strong><strong>e</strong><strong>r</strong></p><br />
+                                            <h2 class="ez-toc-section" id="learning-task-1-read-and-understand-the-following-statement-if-the-statement-is-correct-write-%e2%80%9c-push%e2%80%9d-and%e2%80%9cpull-if-not-write-your-answer-on-the-space-provided-1-the-role-of">
+                            10. LEARNING TASK 1: Read and understand the following statement if the statement is correct write “ PUSH” and“PULL if not". Write your answer on the space provided.1. The role of official is very crucial in a sporting endeavor.-2. A primary value of officiating is to provide a benefit to those with whom one interacts in thecompetition area.3. Social qualities refer to the ability to deal with others at one given situation.4." Be accurate and Responsible", these values mean that the athlete should strive for their play.5. Integrity refers to firm adherence to an ethical code as well as to the absence of impairment.6. "Adhere to legal standards", this means violating the rule.7. Officiating is an important part of any sports activity whether it is competitive or recreational.8. Sports officiating is not just all about " judge role in the court" but also benefits us improving ourfitness.9. 30 second time out also called illegal touching.10. "model appropriate health habits means obeying the law.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. Push</p><p>2. Push</p><p>3. Push</p><p>4. Pull </p><p>5. Push</p><p>6. Pull </p><p>7. Push</p><p>8. Push</p><p>9. Pull</p><p>10. Pull</p><br />
+                                            <h2 class="ez-toc-section" id="9-sample-multiple-choice-test-1-top-down-models-is-also-called-as-a-inside-the-head-view-c-serial-models-b-parallel-models-d-data-driven-processes-2-the-following-are-bottom-up-models-e">
+                            11. 9: Sample Multiple Choice Test 1). Top-down models, is also called as, a). inside-the-head view c). serial models b). parallel models d) data-driven processes 2). The following are bottom-up models, except for, a). text-based view c). text-driven models b) parallel models d). serial models 3). Interactive models, is also called as, a). text-driven models c). parallel models b). inside-the-head view d). serial models 4). Lower-level skills are also called as, a). identification c). inferential b). interpretation d). social context 5). Which of the following is an interactive, socio-cognitive process ..., involving a text, a reader, and a social context within which the activity of reading takes place? a). writing c). listening b). reading d). understanding .​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.a</p><p>2.b</p><p>3.b</p><p>4.d</p><p>5.c</p><p><strong>Explanation:</strong></p><p>pa Mark brainlest answer po ako please Sana pa nga talaga oh ulit Ako please let me go </p><br />
+                                            <h2 class="ez-toc-section" id="the-teacher-reads-and-discusses-classroom-policies-to-the-students-what-model-of-communication-is-this-linear-interactive-transactional-conversation-%e2%80%8b">
+                            12. the teacher reads and discusses classroom policies to the students what model of communication is this linear, interactive, transactional conversation? ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Transactional is the answer</p><strong>Answer:</strong>Transactional conversation is the answer im sure because the teacher reads and discusses so its the right answer.<p></p><p><strong>Hoped</strong><strong> </strong><strong>i</strong><strong> </strong><strong>helped</strong></p><p></p><p><strong>please</strong><strong> </strong><strong>comment</strong><strong> </strong><strong>if</strong><strong> </strong><strong>my</strong><strong> </strong><strong>answer</strong><strong> </strong><strong>is</strong><strong> </strong><strong>not</strong><strong> </strong><strong>helpful</strong><strong> </strong><strong>at</strong><strong> </strong><strong>all</strong><strong> </strong><strong>i</strong><strong> </strong><strong>will</strong><strong> </strong><strong>feedback</strong><strong> </strong><strong>it</strong><strong> </strong><strong>:</strong><strong>)</strong></p><p></p><strong>#</strong><strong>C</strong><strong>A</strong><strong>R</strong><strong>Y</strong><strong>O</strong><strong>N</strong><strong>L</strong><strong>E</strong><strong>A</strong><strong>R</strong><strong>N</strong><strong>I</strong><strong>N</strong><strong>G</strong><p><strong>Explanation:</strong></p>No explanation<br />
+                                            <h2 class="ez-toc-section" id="b-multiple-choice-read-each-statement-carefully-write-the-letter-of-the-correct-answer-6-interpersonal-communication-is-also-known-as-a-mass-communication-b-public-communication-de-c-dyadic-co">
+                            13. B. Multiple Choice: Read each statement carefully. Write the letter of the correct answer. 6. Interpersonal communication is also known as a. mass communication b. public communication de c. dyadic communication d.virtual reality 7. Smiling at a stranger at a shopping mall as you walk by them is an example of a. verbal communication c. non-verbal communication b. written communication d. visual communication 8. In the communication interaction model, feeling nauseated as you listen to your teacher discussing the lesson in class is an example of because it interferes with the communication process a. context b. noise c. message d. feedback 9. How we sit, stand, and use facial expressions all send non-verbal messages. a. true b. false c. maybe d. sort of 10. The environment in which communication takes place is referred to as a. channel b. context c. noise d. sourceâ€‹</h2><br />
+                        <strong>Answer:</strong><p><strong>B. Multiple Choice: Read each statement carefully. Write the letter of the correct answer. </strong></p><p><strong>6. Interpersonal communication is also known as </strong></p><p><strong>a. mass communication </strong></p><p><strong>b. public communication de </strong></p><strong>c. dyadic communication </strong><p><strong>d. virtual reality </strong></p><p><strong>7. Smiling at a stranger at a shopping mall as you walk by them is an example of </strong></p><strong>a. verbal communication </strong><p><strong>c. non-verbal communication </strong></p><p><strong>b. written communication </strong></p><p><strong>d. visual communication </strong></p><p><strong>8. In the communication interaction model, feeling nauseated as you listen to your teacher discussing the lesson in class is an example of because it interferes with the communication process </strong></p><p><strong>a. context </strong></p><strong>b. noise </strong><p><strong>c. message </strong></p><p><strong>d. feedback </strong></p><p><strong>9. How we sit, stand, and use facial expressions all send non-verbal messages. </strong></p><strong>a. true</strong><strong> </strong><p><strong>b. false </strong></p><p><strong>c. maybe </strong></p><p><strong>d. sort of </strong></p><p><strong>10. The environment in which communication takes place is referred to as </strong></p><p><strong>a. channel </strong></p><strong>b. context </strong><p><strong>c. noise </strong></p><p><strong>d. source</strong></p><p><strong></strong></p><strong>#LEARNING IS FUN</strong><strong>#STUDY HARD</strong><strong>#CARRY-ON-LEARNING</strong><br />
+                                            <h2 class="ez-toc-section" id="quarter-1directions-read-each-item-carefully-and-encircle-the-letter-that-represent-your-answer-1-it-is-the-exchange-of-thoughts-messages-or-information-as-by-speech-signals-writing-or-behavior">
+                            14. Quarter: 1Directions: Read each item carefully and encircle the letter that represent your answer.1. It is the exchange of thoughts, messages, or information as by speech, signals, writing or behavior.A. signal B. language c. Communication D. Information2. This body language shows that one is listening,A. looking away B. nodding and eye contact C. staring at the window D. slouching3. It is the sender of the message.A. listener B. receiver C. recipient D. speaker4. It is the content of the communication,A. message B. speaker C. Channel D. Barrier5. It describe how the process of communication, show the relationship among variables and help find andrepair problems in communicationA. Communication Model B. Communication Breakdown C. Misinformation D. Transaction6. He is the one who introduced the Linear Model of Communication.A. Aristotle B. Shannon-Weaver C. Wilbur Schramm D. Eugene White7. It shows the important roles of the sender and receivers as communicators as they reverse roles.A. Transactional Model B. Telephone Model C. Interactive Model D. Cyclical Model8. It is found in Interactive Model of Communication,A. Barrier B. Transmitting C. Feedback D. Field of Experience9. What influence the interpretation of conversation to effective communication?A. Noise B. Feedback c. Signal D. Source10. Which barrier includes the mental conditions of the listener?A. Physiological barrier B. Psychological Barrier C. Physical Noise c. Noise​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.C</p><p>2.B</p><p>3.D</p><p>4.A</p><p>5.D</p><p>6.B</p><p>7.A</p><p>8.A</p><p>9.C</p><p>10.B</p><br />
+                                            <h2 class="ez-toc-section" id="%c2%a0read-each-statement-and%c2%a0identify-what%c2%a0models-of-communication-on-the-following-statement-write-the-correct-answer-on-your-sheet-1-a-communication-model-inspired-by-a-helix-the-commu">
+                            15.  Read each statement and identify what models of communication on the following statement. Write the correct answer on your sheet.1. A communication model inspired by a helix. The communication progresses with age as our experience and vocabulary increases.2. The senders and receivers both are known as communicators and both play equally important roles in communication.3. The communication of individuals are simultaneously engaging in the sending and receiving of messages.4. It makes the understanding of any concept easy and clear.5. It is a model of communication that shows social interaction where at least two interacting agents share a common set of signs.6. The message flows in a straight line from sender to the receiver. There is no concept of feedback.7. It was designed to mirror the functioning of radio and telephone technology.8. It is a model of communication mostly used for new media like the internet.9. It is a speaker centered model as the speaker has the most important role in it and is the only one active.10. The conceptual models used to explain the human communication process.​</h2><br />
+                        Answer:<p><strong>1.Dance </strong><strong>helical </strong><strong>model</strong></p><p><strong>2</strong><strong>.</strong><strong>t</strong><strong>r</strong><strong>a</strong><strong>n</strong><strong>s</strong><strong>a</strong><strong>c</strong><strong>t</strong><strong>i</strong><strong>o</strong><strong>n</strong><strong>a</strong><strong>l</strong><strong> </strong><strong>model</strong></p><p><strong>3</strong><strong>.</strong><strong>t</strong><strong>r</strong><strong>a</strong><strong>n</strong><strong>s</strong><strong>a</strong><strong>c</strong><strong>t</strong><strong>i</strong><strong>o</strong><strong>n</strong><strong>a</strong><strong>l</strong><strong> </strong><strong>model</strong></p><p><strong>4</strong><strong>.</strong><strong>l</strong><strong>a</strong><strong>s</strong><strong>s</strong><strong>w</strong><strong>e</strong><strong>l</strong><strong>l</strong><strong> </strong><strong>model</strong></p><p><strong>5</strong><strong>.</strong><strong>I</strong><strong>n</strong><strong>t</strong><strong>e</strong><strong>r</strong><strong>a</strong><strong>c</strong><strong>t</strong><strong>i</strong><strong>o</strong><strong>n</strong><strong> </strong><strong>model</strong></p><p><strong>6</strong><strong>.</strong><strong>l</strong><strong>i</strong><strong>n</strong><strong>e</strong><strong>a</strong><strong>r</strong><strong> </strong><strong>model</strong></p><p><strong>7.Shannon </strong><strong>weaver model</strong></p><p><strong>8</strong><strong>.</strong><strong>Osgood-Schramm Model</strong></p><p><strong>9.Aristotle's</strong><strong> </strong><strong>model</strong></p><p><strong>1</strong><strong>0</strong><strong>.</strong><strong>c</strong><strong>o</strong><strong>n</strong><strong>c</strong><strong>e</strong><strong>p</strong><strong>t</strong><strong>u</strong><strong>a</strong><strong>l</strong><strong> </strong><strong>model</strong></p><p></p><strong>#</strong><strong>c</strong><strong>a</strong><strong>r</strong><strong>r</strong><strong>y</strong><strong>o</strong><strong>n</strong><strong>l</strong><strong>e</strong><strong>a</strong><strong>r</strong><strong>n</strong><strong>i</strong><strong>n</strong><strong>g</strong><p></p><p><strong>pa </strong><strong>brainliest </strong><strong>answer </strong><strong>po</strong></p><p></p><strong>S </strong><strong>A </strong><strong>L </strong><strong>A </strong><strong>M </strong><strong>A </strong><strong>T!</strong><strong>!</strong><strong>!</strong><p></p>Explanation:<p></p><p><strong>1</strong><strong>.</strong><strong>Communication is taken as a dynamic process in helical model of communication and it progresses with age as our experience and vocabulary increases. ... Thus, the communicative relationship reaches to the next level in which people share more information. Communication is supposed to be continuous and non-repetitive.</strong></p><p></p><p><strong>2</strong><strong>.</strong><strong>In transactional model, senders and receivers both are known as communicators and both play equally important role in communication. Transactional model relates communication with social reality, cultural up-bringing and relational context (relationships).</strong></p><p></p><p><strong>3</strong><strong>.</strong><strong>The basic premise of the transactional model of communication is that individuals are simultaneously engaging in the sending and receiving of messages. In a slightly more complex form a sender and a receiver are linked reciprocally. ... A particular instance of communication is called a speech act.</strong></p><p></p><p><strong>4</strong><strong>.</strong><strong>When communication is effective, it leaves all parties involved satisfied and feeling accomplished. By delivering messages clearly, there is no room for misunderstanding or alteration of messages, which decreases the potential for conflict.</strong></p><p></p><p><strong>5</strong><strong>.</strong><strong>The Interaction Model of communication (see Figure 1.4) describes communication as a process in which participants alternate positions as sender and receiver and generate meaning by sending messages and receiving feedback within physical and psychological contexts (Schramm, 1997).</strong></p><p></p><p><strong>6</strong><strong>.</strong><strong>Linear model of communication is a simple one way communication model. The message flows in a straight line from sender to the receiver. There is no concept of feedback. The only task that a receiver does here is to receive the message.</strong></p><p></p><p><strong>7</strong><strong>.</strong><strong>The Shannon–Weaver model was designed to mirror the functioning of radio and telephone technology. ... The sender was the part of a telephone a person speaks into, the channel was the telephone itself, and the receiver was the part of the phone through which one can hear the sender on the other end of the line.</strong></p><p></p><p><strong>8</strong><strong>.</strong><strong>New media is any media – from newspaper articles and blogs to music and podcasts – that are delivered digitally. From a website or email to mobile phones and streaming apps, any internet-related form of communication can be considered new media. ... Other new media are entirely new, such as a podcast or smartphone app.</strong></p><p></p><p><strong>9</strong><strong>.</strong><strong>The Aristotle's communication model is a speaker centered model as the speaker has the most important role in it and is the only one active. It is the speaker's role to deliver a speech to the audience. ... This makes the communication process one way, from speaker to receiver.</strong></p><p></p><p><strong>1</strong><strong>0</strong><strong>.</strong><strong>Models of communication are conceptual models used to explain the human communication process. ... Later, Wilbur Schramm introduced a model that identified multiple variables in communication which includes the transmitter, encoding, media, decoding, and receiver.</strong></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="il-modified-true-or-false-read-and-analyze-each-sentence-carefully-write-true-if-thestatement-is-correct-and-changed-the-underlined-word-or-phrase-if-the-statement-is-incorrect-write-your-answers-on">
+                            16. IL MODIFIED TRUE or FALSE. Read and analyze each sentence carefully. Write true if thestatement is correct and changed the underlined word or phrase if the statement is incorrect.Write your answers on a separate sheet.1. Informal group is a type of group with small and having intimate andpersonal relationship among members.2. Group is a number of individuals who have common identity, interactwith one another, and feel belonging together.3. The out-group is commonly viewed as outsiders by the in-group.4. Social organization is a process of bringing order and meaning intohuman social life.5. Interaction occurs when the action of one person causes another personor person to act.6. The in-group is the group with which the individual identifies and whichgives him a sense of belonging, solidarity, camaraderie, esprit de corps, anda protective attitude toward the other members.7.Secondary Groups refer to the degree to which the members of a grouphave the ability to function and interact together towards the pursuit of theirgoals.8. Gesellschaft is a type of group which is characterized by impersonal,secondary, contractual, and rationalized relationships.9. The primary groups are groups which are important to us as modelseven though we ourselves may not be a part of the group.10. Secondary groups are the initial groups that a person joins and theyprovide him or her with experiences in social relations.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. true</p><p>2. false</p><p>3.true</p><p>4. false</p><p>5. false</p><p>6. true</p><p>7.true</p><p>8.false</p><p>9.false</p><p>10. true</p><br />
+                                            <h2 class="ez-toc-section" id="read-the-interactive-session-and-discuss-the-following-questions-below-source-5-a-u-s-army-and-marine-corps-battlefield-logistics-by-alan-dennis-shortly-after-the-gulf-war-in-1991-desert-storm">
+                            17. Read the interactive session and discuss the following questions below.
+Source: 5-A U.S. ARMY AND MARINE CORPS BATTLEFIELD LOGISTICS by Alan Dennis.
+Shortly after the Gulf War in 1991 (Desert Storm), the U.S. Department of Defense realized that there were significant problems in its battlefield logistics systems that provided supplies to the troops at the division level and below. During the Gulf War, it had proved difficult for army and marine units fighting together to share supplies back and forth because their logistics computer systems would not easily communicate. The goal of the new system was to combine the army and marine corps logistics systems into one system to enable units to share supplies under battlefield conditions.The army and marines built separate as-is process models of their existing logistics systems that had 165 processes for the army system and 76 processes for the marines. Both process models were developed over a 3-month time period and cost several million dollars to build, even though they were not intended to be comprehensive.I helped them develop a model for the new integrated battlefield logistics system that would be used by both services (i.e., the to-be model). The initial process model contained 1,500 processes and went down to level 6 DFDs in many places. It took 3,300 pages to print. They realized that this model was too large to be useful. The project leader decided that level 4 DFDs was as far as the model would go, with additional information contained in the process descriptions. This reduced the model to 375 processes (800 pages) and made it far more useful.
+Questions
+1. What are the advantages and disadvantages to setting a limit for the maximum depth for a DFD?
+2. Is a level 4 DFD an appropriate limit? Why? Why not?</h2><br />
+                        <p><strong>Answer:</strong></p><p>1: Data Flow Daigram- DFD represents a software system as a labeled, directed graph. DFD illustrates the flow of data among a set of components. The components may be tasks, software components that will be included in the software system </p><p></p><p></p><p><strong>Explanation:</strong></p><p>ssana Maka help </p><br />
+                                            <h2 class="ez-toc-section" id="read-each-item-carefully-write-the-letter-of-your-answer-use-capital-letters-only-1-during-discussion-bea-asks-her-teacher-about-the-difference-between-connotative-and-denotative-meaning-of-word">
+                            18. Read each item carefully. Write the letter of your answer. Use CAPITAL LETTERS only.  1. During discussion, Bea asks her teacher about the difference between connotative and denotative meaning of words. What element of communication is being played by Bea? She acts as the A channel B. message C. receiver D. sender 2 People encounter different kinds of problems, sometimes we face it alone without knowing that it is a best medicine for us if we will practice sharing it to other people for them to at least help us. What function of communication is evident in this scenario? A. informativeB. instructive C. persuasive D. therapeutic 3. Sometimes, it is hard for us to communicate with other people especially if the noise is very loud. What barrier to effective communication is evident in this scenario? A. language B. physical C. semantic D. socio 4. Schramm Model shows ____ communicationA. interactive. C. motive B. linear D. transactional 5. It was Kalei's turn to speak when she felt nervous and paused. She tried to open her mouth, but she just mumbled. What barrier is being shown in the situation? A cultural B. linguistic C. physical D. psychological​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.D</p><p><strong>2.C</strong></p><p>3.B</p><p>4.B</p><p>5.B</p><p><strong>Explanation:</strong></p><p>thanks ☺️ me later</p><p>Pa follow ☦️</p><br />
+                                            <h2 class="ez-toc-section" id="multiple-choice-directions-read-each-itern-carefully-and-write-the-letter-of-your-sosyer-1-which-of-the-following-elements-is-missing-in-the-linear-model-a-feedback-c-receiver-b-noise-dsender">
+                            19. Multiple Choice DIRECTIONS: Read each itern carefully, and write the letter of your Sosyer. 1. Which of the following elements is missing in the linear model? a. Feedback C. Receiver b. Noise dSender 2. This model of communication shows how components are influenced by different factors like communication skills. a. Aristotle's Model C. Schramm's Model b. Berlo's Model dShannon- Weaver Model 3. It is a type of communication model which is primarily described as one-way process of communication. a. Linear C. Transactional b. Interactive d Conversational 4. It is a type of communication model in which senders and receivers both are known to be communicators. a. Linear c. Transactonal b. Interactive d. Conversational 5. This model of communication is known to be a mother of all models a. Aristotle's Model C. Schramm's Model b. Berlo's Model d. Shannon-Weaver Model​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. a</p><p>2. d</p><p>3. d</p><p>4. d</p><p>5. b</p><p></p><p>Yan yung answer ko nung SHS pako! </p><p>pa follow nalang po</p><br />
+                                            <h2 class="ez-toc-section" id="1-identification-read-each-item-carefully-and-write-the-correct-answer-in-the-space-provided-before-each-number-1-this-model-is-more-interactive-and-it-shows-that-a-barrier-such-as-noise-may-int">
+                            20. 1. IDENTIFICATION. Read each item carefully and write the correct answer in the space provided before each number. 1. This model is more interactive and it shows that a barrier, such as noise, may interfere with the flow of communication. 2. This is a Model of Communication that is a two-way process and includes feedback as one of its elements. 3. This model of communication is mostly used on the internet. 4. In this model, communication is considered way process where the sender is the only one who sends a message and the receiver doesn't give feedback or response. 5. These are structured representations of the process that helps in understanding how communication can be carried out. 6. He is known as the "father of mass communication." feedback in this model. 7. One example of this communication model is the Human-computer interaction. 8. The proponent of the Linear Model of Communication. 9. Non-verbal feedback like gestures, and body language, is also considered as 10. Give your example of the Linear Model of Communication​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. Shannon-Weaver Model</p><p>2. Interactive model of communication</p><p>3. Interactive Model of Communication</p><p>4. One way communication</p><p>5. Effective Communication </p><p>6. WILBUR SCHRAMM'S MODEL</p><p>7. Interaction with a mobile app</p><p>8. Shannon and Weaver </p><p>9. Kinesics</p><p>10. A presidential candidate decides to record a speech and broadcast it on television. </p><br />
+                                            <h2 class="ez-toc-section" id="what-i-knowactivity-1-lets-check-your-prior-knowledge-directions-read-each-item-carefully-write-true-if-the-statement-is-trueand-write-false-if-the-statement-if-false-write-your-answers-in-your">
+                            21. What I KnowActivity 1. Let's check your prior knowledge...Directions: Read each item carefully. Write TRUE if the statement is trueand write FALSE if the statement if false. Write your answers in your ActivityNotebook.1..Inquiry is in the form of authentic (real-life) problems within thecontext of the curriculum and / or community.2. The inquiry capitalizes on students' curiosity.3.Data and information are actively used, interpreted, refined, digestedand discuss. Teachers, students and teacher-librarian collaborate.Community and society are connected with the inquiry.5 Teachers take ownership of their learning.6. The teacher and students interact more frequently and more activelythan during traditional teaching.7 There is an identifiable time for inquiry-based learning.8. The teacher uses body language in doing inquiry.9The teacher facilitates the process of gathering and presentinginformation.10. The teacher models the behaviors of inquiry.​</h2><br />
+                        <p><strong>Explanation:</strong></p><p>pAki answer po please need ko</p><br />
+                                            <h2 class="ez-toc-section" id="datepart-i-read-the-following-statements-carefully-identify-what-is-being-described-in-eachitem-choose-your-answers-from-the-choices-inside-the-box-a-hypertextb-intertextc-both1-snow-glass-a">
+                            22. Date:Part I. Read the following statements carefully. Identify what is being described in eachitem. Choose your answers from the choices inside the box.A. HypertextB. IntertextC. Both1. Snow, Glass, Apples is a short story by Neil Gaiman. This piece tells the story ofSnow White from the point of view of her stepmother, who was actually trying to savethe kingdom from her bloodthirsty stepdaughter.2. Wicked by Gregory McGuire revolves around the story of the Wicked Witch of theWest from Frank Baum's The Wizard of Oz and reimagines her as the misunderstoodprotagonist, Elphaba.3. Fast City by Don Bosco is an interactive narrative which presents a set of conflictsand psychological landscapes placed within a technology-obsessed urban space.4. The Museum by Adam Kenney emulates the experience of being in a museum byallocating a page to each part of the museum and giving the reader free rein as towhere he/she wants to go by providing links to different 'areas' of the museum,5. Bridget Jones's Diary by Helen Fielding is written in a diary format and chroniclesevents within a year in the life of protagonist Bridget in the 90s; it is loosely based onJane Austen's Pride and Prejudice.6. This creates a network of materials linked because of various connections.7. It is the complex interrelationship between a text and other texts.8. This can also be seen as footnote or commentaries in the margin.9. This is the modelling of a text's meaning by another text.10. It is a non-linear way of presenting information.​</h2><br />
+                        <p></p><p><strong>Explanation:</strong></p><p>hay sobrang hirap nmn yarn hindi ko po kyang sagutan sorry</p><br />
+                                            <h2 class="ez-toc-section" id="pre-testdirections-read-the-paragraph-below-choose-the-letter-of-the-correct-answer-writeyour-answer-on-the-blank-as-our-world-recognizes-increased-globalization-21st-century-learning-refers-to-th">
+                            23. PRE-TESTDirections: Read the paragraph below. Choose the letter of the correct answer. Writeyour answer on the blank.As our world recognizes increased globalization, 21st century learning refers to the skills and technologies that will position our students to succeed in a world that ever increasingly requires collaboration, critical thinking, adaptability, grit, perseverance and relies less on the learning of facts and data. The how and why of learning becomes central and is far more important than the what or who from past models. Students must approach lifelong learning with a flexible mindset as they tackle 21st century issues. They must learn to work with and listen to a variety of points of view.Technology plays a big part in 21st century learning. The use of podcasts, audio and video blogs and online learning all play into how education is moving and is significant in high schools and universities. The Internet is the connection to our global world. Students will acquire internet navigation skills as they move through our program. The vast array of resources on the Internet provides a wealth of data and students will learn to filter the essential from the nonessential; to incorporate visual images and graphics. The use of the interactive White Board is a valuable classroom tool. Students will have facility with iPads and laptop computers. Jeff Escabar Head of SchoolSource pasionschool.org/21st century learning1. What is the essay all about?A. GlobalizationB. 21 Century LearningC. SkillsD. Technologies2. Who wrote the essay?A. Jeff EscabarB. School HeadC. Spanish in Fusion SchoolD. 21" Century Learning​</h2><br />
+                        <p></p><p></p><p></p><p>   </p><p>[tex]answer[/tex]</p><p></p><p></p>      1.B<p></p>      2.A<p></p>      3.B<p>   </p>      4.A<p>   </p>      5.B<p></p><br />
+                                            <h2 class="ez-toc-section" id="directions-read-each-item-carefully-then-choose-the-letter-that-corresponds-to-your-answer-write-your-answers-on-a-separate-sheet-of-paper-1-which-model-shows-a-one-way-communication-where-the-sour">
+                            24. Directions: Read each item carefully then choose the letter that corresponds to your answer. Write your answers on a separate sheet of paper.1.	Which model shows a one-way communication where the source of information does not know whether the message is understood or not?a.	Interactive	b. Linear	c. Transactional model	d. A and B2.	Which of the following is an example of a one-way communication?a.	A church leader giving a homily to a crowd of peopleb.	A teacher encouraging students to give their thoughts on a relevant issuec.	Classmates talking about how to accomplish their assignmentsd.	ALL of the above3.	Which model of communication shows the interchange of ideas among different individuals and shows progress in the process?a.	Interactive	b. Linear	c. Transactional	d. NONE of the above4.	Angie works for a fast food company as a cashier. A customer comes in to order sandwich and drinks. What model of communication is described in the given situation?a.	Conversational approachb.	Interactivec.	Lineard.	Transactional Model5.	Which of the following elements affects the flow of any communication process?a.	Barrier	b. Channel	c. Feedback	d. Source6.	Which element is NOT found in Shannon-Weaver model?a.	Barrier	b. Channel	c. Feedback	d. Receiver7.	You and your neighbors would like to initiate a project for the benefit of the elderly in your community. The chairman presented his proposal and ignored his constituents’ suggestions. What model of communication is presented here?a.	Berlo’s Model	b. Schramm Model	c. Shannon-Weaver	d. Transactional Model8.	In the above situation, what element of communication is missing?a.	Barrier	b. context	c. feedback	d. receiver9.	When is a communication considered failed?a.	A negative feedback was given by the recipient of the message.b.	Both sender and receiver stopped the conversation process.c.	The persons involved fixed the problem that provoked in the process.d.	The recipient did not decode the meaning of the message sent.10.	Which of the following is NOT a purpose of communication?a.	It creates blunder that worsens an existing issue or concern.b.	It fosters good relationship among people.c.	It gears towards the solution to a problem.d.	It gives an overview of a national issue for public understanding.
+​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.a</p><p>2.c</p><p>3.c</p><p>4.d</p><p>5.b</p><p>7.d</p><p>8.d</p><p>9.a</p><p>10.c</p><p><strong>Explanation:</strong></p><p>plss po brainlist mo ko plss</p><br />
+                                            <h2 class="ez-toc-section" id="pretest-smile-and-cheer-updirection-compare-and-contrast-the-three-reading-models-using-an-expanded-venn-diagrambottom-uptop-downinteractive%e2%80%8b">
+                            25. Pretest. Smile and cheer up!
+Direction: Compare and contrast the three reading models using an expanded Venn diagram
+Bottom-up
+Top-down
+Interactive​</h2><br />
+                        <p><strong>Answer:</strong></p><p>The top down method believes students gain understanding from text as they read. It does not specifically teach phonics but rather relies on students making sense of letters and vocabulary as they are exposed to text. The bottom up method, conversely, uses phonics as the primary mode of instruction</p><br />
+                                            <h2 class="ez-toc-section" id="what-am-i-good-at-let-us-see-how-ready-you-are-as-we-walk-through-with-our-learning-module-a-directions-read-and-analyze-each-item-below-choose-the-letter-of-the-correct-answer-1-what-is-not-a">
+                            26. What am I good at? Let us see how ready you are, as we walk through with our learning module. A. Directions: Read and analyze each item below. Choose the letter of the correct answer. 1. What is NOT a part of multimedia? D . A. text B. audio C. graphic D. movie 2. These are elements of multimedia EXCEPT D ? A. text B. power point C. video D. images 3. Any combination of text, graphics, and video is called A A. multimedia B. video C. text D. animation 4. What is a still figure with two dimensions? D A. multimedia B. graphics C. audio/sound D. animation 5. The multimedia project format which includes interactive, computer-based models of real-life situations. A. multimedia B. graphics C. simulations D. animation 6. Multimedia is the use of more than one . A. text B. media C. simulations D. text 7. There are main elements in multimedia. A. three B. four C. five D. two 8. It is the most basic fact in multimedia and the most interesting component. A. images B. audio/sound C. animation D. text 9. The most sensuous element of multimedia. A. images B. audio/sound C. animation D. text 10. It can make static presentation come alive and it is visual overtime? A. images B. audio/sound C. animation D. text</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. C</p><p>2.B</p><p>3.A</p><p>4.D</p><p>5.C</p><p>6.B</p><p>7.B</p><p>8.A</p><p>9.B</p><p>10.C</p><p><strong>Explanation:</strong></p><p>DI PO SURE MASYADO YAN SORRY KUNG MAY MALI YAN LANG ALAM KO</p><p> </p><br />
+                                            <h2 class="ez-toc-section" id="i-modified-true-false-5-read-the-given-statement-write-true-if-the-statement-is-true-write-false-if-the-statement-is-false-then-underline-false-statement-and-refute-it-by-writing-the-correct">
+                            27. I. Modified True / False. (5) Read the given statement. Write true if the statement is true. Write false if the statement is false, then underline false statement and refute it by writing the correct idea in the blank provided. 1. In communication process, the initial source which is the medium becomes responsible for the effective communication _______________________________________________________________________ 2. The ability to pay attention and to provide critical feedback are two skills associated with being a good listener. ________________________________________________________________________ 3. The manager who imposes on his subordinates, adapts to interactive way of communication model. ____________________________________________________________________________ 4. In a highly organized business community, language learning is vital rather than language acquisition. ____________________________________________________________________________ 5. Non Verbal Communication causes various interpretation to people. ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. true</p><p>2. true</p><p>3. true</p><p>4. false</p><p>5. false </p><br />
+                                            <h2 class="ez-toc-section" id="what-i-knowa-true-or-false-read-each-statement-below-carefully-write-t-if-the-statement-is-trueor-f-if-otherwise_____1-communication-is-normally-intentional_____2-interpersonal-communication-alwa">
+                            28. What I KnowA. True or False: Read each statement below carefully. Write T if the statement is trueor F if otherwise_____1. Communication is normally intentional_____2. Interpersonal Communication always occurs between two people_____3. If you already consider yourself a good communicator, then how you engageothers does not need to change_____4. Dialog is more personal and intimate in nature than interviews_____5. More often, a conversation is casual or an informal exchange between twopeople with no formal purpose, less intimate, and less serious.B. Multiple Choice: Read each statement carefully. Write the letter of the correct answer6. Interpersonal communication is also known asa. mass communicationc. dyadic communicationb. public communicationd. virtual reality7. Smiling at a stranger at a shopping mall as you walk by them is an example ofa. verbal communicationc. non-verbal communicationb. written communicationd. visual communication8. In the "communication interaction" model, feeling nauseated as you listen to your teacherdiscussing the lesson in class is an example ofbecause it interferes with thecommunication process.a. contextb. noisec. messaged. feedback9. How we sit, stand, and use facial expressions all send non-verbalmessagesa. trueb. false c. maybed sort of10. The environment in which communication takes place is referred to asa. channe!b. contextc. noised. source​</h2><br />
+                        <p><strong>Answer:</strong></p>A.<p></p><p>1.T</p><p></p><p>2.F.</p><p></p><p>3.T</p><p></p><p>4.T.</p><p></p><p>5.T</p><p></p><p></p>B.<p></p><p>6.C</p><p></p><p>7.C.</p><p></p><p>8.D.</p><p></p><p>9.A</p><p></p><p>10.D</p><p></p><p></p><p><strong>Explanation:</strong></p><p></p><p>HOPE IT helps ❤️</p><p><strong>Answer:</strong></p><p>1.T</p><p>2.T</p><p>3.F</p><p>4. T</p><p>5. T</p><p>6. c</p><p>7. c</p><p>8. b</p><p>9. a</p><p>10. b</p><br />
+                                            <h2 class="ez-toc-section" id="e-decoding3-this-refers-to-the-process-of-converting-the-messages-into-words-actions-or-otherforms-that-the-speaker-understandsa-speaker-b-message-c-encoding-d-channel-e-decoding4-these-are-the-in">
+                            29. E Decoding3. This refers to the process of converting the messages into words, actions or otherforms that the speaker understandsA Speaker B Message C. Encoding D Channel E Decoding4. These are the information ideas or thoughts conveyed by the speaker in words or inactionsA Speaker B. Message C Encoding D. Channel E Decoding5. This refers to the medium or the means in which the encoded message is conveyedA Speaker B. Message C. Encoding D. Channel E Decoding6. This is the recipient of the message, or someone who decodes the messageA Receiver B. Feedback C. ContextD. NoiseE Speaker7. These are the factors that affect the flow of communicationA Receiver B. Feedback C. ContextD NoiseE Speaker8. This refers to the environment where communication takes placeA Receiver B. Feedback C. ContextD Noise E Speaker9. These are the reactions responses or information provided by the receiverA Receiver B. Feedback C. ContextD. Noise E Speaker10. This model is known as the "mother of all communication models, which depictscommunication as a linear or one-way processA Shannon-Weaver Model B. Transaction Model C. Schramm ModelFor numbers 11 - 18 identify the function of communication in each of the following situations.The following are your choicesA Control B. Social Interaction C. Motivation D. Emotional Expression E. InfoDissemination11. The teacher reads and classroom policies to her students.12. Ross greatsRachel, then, they start talking about their plans for the holidays.13. Phoebe sharesher insights on how to live peacefully despite a complicated life.14. Monica shares her personal frustrations with Chandler15. The geometry teacher lectures about Mathematical concepts16. The President delivers his State of the Nation Address (SONA)17. Sheila delivers her valedictory speech18. A television personality thanks the supportive movie-goers during an interview1​</h2><br />
+                        <p><strong>Answer:</strong></p><p>3.E</p><p>4.B</p><p>5.D</p><p>6.A</p><p>7.D</p><p>8.C</p><p>9.B</p><p>10.A</p><p>11.A</p><p>12.B</p><p>13.C</p><p>14.D</p><p>15.E</p><p>16.E</p><p>17.C</p><p>18.D</p><p><strong>Explanation:</strong></p><p> hope this helps</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="what-i-knowwhen-was-the-last-time-you-talked-to-someone-or-exchanged-conversationwith-a-group-how-did-it-op-did-it-result-to-something-and-or-did-it-lead-totoisunderstanding-or-conflict-why-do-you">
+                            30. What I Knowwhen was the last time you talked to someone or exchanged conversationwith a group? How did it op? Did it result to something and or did it lead totoisunderstanding or conflict? Why do you think so?Directions: Read each item carefully then choose the letter that corresponds toyour answer. Write your answers on a separate sheet of paper.DieWhich model shows a one-way communication where the source of inforinationdoes not know whether the message is understood or not?A. InteractiveC. Transactional modelB. LinearD. A and B2. Which of the following is an example of a one-way communication?A. A church leader giving a homily to a crowd of peopleB. A teacher encouraging students to give their thoughts on a relevant issueC. Classrnates talking about how to accomplish their assignmentsD.ALL of the above​</h2><br />
+                        <p><strong>Answer:</strong></p><p>D. all of the above</p><p>yan lang po</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/H4iCgjXNJZ8?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>english</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/hunger-games-hero-s-journey.html">Hunger Games Hero s Journey</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/the-gorgon-s-head-conflict.html">The Gorgon s Head Conflict</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/bicycle-pump-boyle-s-law.html">Bicycle Pump Boyle s Law</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/hermana-bali.html">Hermana Bali</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/the-baker-s-neighbor.html">The Baker s Neighbor</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/taba-s-grassroots-rational-model.html">Taba s Grassroots Rational Model</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/paggawa-salik-ng-produksyon.html">Paggawa Salik Ng Produksyon</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/ekspresyong-lokal-halimbawa.html">Ekspresyong Lokal Halimbawa</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/halimbawa-ng-tentatibong-balangkas.html">Halimbawa Ng Tentatibong Balangkas</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/bakery-owner.html">Bakery Owner</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/buod-ng-ang-tusong-katiwala.html">Buod Ng Ang Tusong Katiwala</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/how-are-women-s-lives-portrayed-in-the-story.html">How Are Women s Lives Portrayed In The Story</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/forest-types-present-in-the-philippines.html">Forest Types Present In The Philippines</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/noli-me-tangere-chapters.html">Noli Me Tangere Chapters</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/kakulangan-sa-edukasyon.html">Kakulangan Sa Edukasyon</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/hirarkiya-ng-pangangailangan.html">Hirarkiya Ng Pangangailangan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/the-beggar-and-the-king-summary.html">The Beggar And The King Summary</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/disney-songs-with-allusions.html">Disney Songs With Allusions</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/paano-kumilos-ang-hayop-at-tao.html">Paano Kumilos Ang Hayop At Tao</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://talkedukasi.github.io/carousel-melanie-meaning.html">Carousel Melanie Meaning</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://talkedukasi.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://talkedukasi.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://talkedukasi.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://talkedukasi.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://talkedukasi.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/b4/f1/ef/b4f1ef8dfe59b7fa68754094cf6c8e0e.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>
